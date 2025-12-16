@@ -1,0 +1,195 @@
+"flagCode","country","QualityofLifeScoreNumbeo_2023","QualityofLifeScoreUSNews_2023","HumanDevelopmentIndex_2023","QualityofLifeRankUSNews_2022"
+"LU","Luxembourg",200.1,62.1,0.922,
+"NL","Netherlands",200.1,87.7,0.955,7
+"DK","Denmark",190.6,91.4,0.962,2
+"OM","Oman",184.8,8.9,0.858,70
+"CH","Switzerland",185.8,90.3,0.97,5
+"FI","Finland",188.1,90.6,0.948,8
+"NO","Norway",181.8,93.6,0.97,4
+"IS","Iceland",191.1,,0.972,
+"AT","Austria",183.3,78.9,0.93,11
+"DE","Germany",176,85.8,0.959,9
+"AU","Australia",165.7,86.8,0.958,6
+"NZ","New Zealand",170.9,80,0.938,10
+"SE","Sweden",174.8,100,0.959,3
+"US","United States",173,49.1,0.938,20
+"EE","Estonia",176.4,17.5,0.905,48
+"QA","Qatar",166.6,33.9,0.886,34
+"JP","Japan",175.5,69.6,0.925,13
+"ES","Spain",177.7,59,0.918,19
+"SI","Slovenia",169.3,15.4,0.931,54
+"HR","Croatia",161.6,24.9,0.889,37
+"LT","Lithuania",160.4,11.7,0.895,56
+"GB","United Kingdom",164.2,73.9,0.946,14
+"CZ","Czechia",162.3,28.5,0.915,
+"AE","United Arab Emirates",173.8,41.2,0.94,24
+"SA","Saudi Arabia",150.7,27.6,0.9,33
+"BE","Belgium",156.4,79.7,0.951,12
+"CA","Canada",156.4,92.7,0.939,100
+"IE","Ireland",153.2,62.7,0.949,15
+"FR","France",153.2,59.6,0.92,17
+"IL","Israel",147.2,17.8,0.919,36
+"PT","Portugal",166.5,58,0.89,21
+"LV","Latvia",152.6,10.1,0.889,50
+"KW","Kuwait",129.7,,0.852,
+"CY","Cyprus",146.5,13.4,0.913,
+"TW","Taiwan",144.9,,,
+"SK","Slovakia",148.2,16.1,0.88,46
+"PL","Poland",139.6,49.4,0.906,25
+"SG","Singapore",153.2,50.3,0.946,16
+"IT","Italy",140.3,51.4,0.915,22
+"ZA","South Africa",136.9,12.7,0.741,
+"KR","South Korea",138.1,45.2,0.937,18
+"BG","Bulgaria",131.4,18.3,0.845,42
+"HU","Hungary",131.6,24.3,0.87,30
+"RO","Romania",129.9,18.8,0.845,44
+"GR","Greece",128.9,32.4,0.908,26
+"HK","Hong Kong",105.5,,0.955,
+"UY","Uruguay",136.2,11,0.862,55
+"MY","Malaysia",123.4,26.4,0.819,28
+"MT","Malta",121.8,,0.924,
+"BY","Belarus",117,3.1,0.824,72
+"TR","Turkey",118.3,25.6,0.853,40
+"EC","Ecuador",119.8,7.8,0.777,65
+"CR","Costa Rica",,14.6,0.833,
+"GE","Georgia",116,,0.844,
+"CN","China",105.1,76.1,0.797,23
+"MX","Mexico",125,18.5,0.789,41
+"RS","Serbia",113.1,6.1,0.833,74
+"JO","Jordan",116.3,8,0.754,68
+"PA","Panama",116.8,7,0.839,62
+"IN","India",116.1,19,0.685,38
+"MK","North Macedonia",109.4,,0.815,
+"AR","Argentina",110.2,17.5,0.865,59
+"AM","Armenia",,,0.811,
+"TN","Tunisia",,9.2,0.746,66
+"UA","Ukraine",107.3,,0.779,61
+"AZ","Azerbaijan",108.5,3.4,0.789,73
+"MA","Morocco",104.7,16,0.71,47
+"RU","Russia",104.2,14.5,0.832,31
+"CL","Chile",99.1,13.5,0.878,43
+"KZ","Kazakhstan",96.5,3.8,0.837,71
+"CO","Colombia",99.2,8.6,0.788,60
+"PK","Pakistan",101.4,,0.544,
+"AL","Albania",,,0.81,
+"LB","Lebanon",82.4,2.1,0.752,77
+"ID","Indonesia",92,20,0.728,35
+"PH","Philippines",82.1,20.3,0.72,39
+"VN","Vietnam",89.3,20.5,0.766,32
+"KE","Kenya",103.5,7.3,0.628,69
+"PE","Peru",80.3,10.5,0.794,57
+"IR","Iran",77.6,0.8,0.799,
+"EG","Egypt",88.6,13.8,0.754,51
+"LK","Sri Lanka",76.5,8.9,0.776,58
+"BD","Bangladesh",69.5,11.4,0.685,
+"VE","Venezuela",74.4,,0.709,
+"NG","Nigeria",49.5,,0.56,
+"BR","Brazil",106..8,17,0.786,52
+"ET","Ethiopia",,,0.497,
+"CD","DR Congo",,,0.522,
+"TH","Thailand",98.5,24.8,0.798,29
+"TZ","Tanzania",,,0.555,
+"MM","Myanmar",,,0.609,67
+"SD","Sudan",,,0.511,
+"UG","Uganda",,,0.582,
+"DZ","Algeria",,4.1,0.763,
+"IQ","Iraq",,,0.695,78
+"AF","Afghanistan",,,0.496,
+"YE","Yemen",,,0.47,
+"AO","Angola",,,0.616,
+"UZ","Uzbekistan",,3.2,0.74,76
+"MZ","Mozambique",,,0.493,
+"GH","Ghana",,6.6,0.628,
+"MG","Madagascar",,,0.487,
+"CI","Ivory Coast",,,0.582,
+"CM","Cameroon",,5.2,0.588,
+"NP","Nepal",,,0.622,
+"NE","Niger",,,0.419,
+"SY","Syria",,,0.564,
+"ML","Mali",,,0.419,
+"BF","Burkina Faso",,,0.459,
+"MW","Malawi",,,0.517,
+"ZM","Zambia",,,0.595,
+"TD","Chad",,,0.416,
+"SO","Somalia",,,0.404,
+"SN","Senegal",,,0.53,
+"GT","Guatemala",,5.4,0.662,64
+"KH","Cambodia",,12.2,0.606,49
+"ZW","Zimbabwe",,4.8,0.598,
+"GN","Guinea",,,0.5,
+"BJ","Benin",,,0.515,
+"RW","Rwanda",,,0.578,
+"BI","Burundi",,,0.439,
+"BO","Bolivia",,,0.733,
+"SS","South Sudan",,,0.388,
+"HT","Haiti",,,0.554,
+"DO","Dominican Republic",,10.8,0.776,53
+"HN","Honduras",,4.1,0.645,
+"CU","Cuba",,,0.762,
+"TJ","Tajikistan",,,0.691,
+"PG","Papua New Guinea",,,0.576,
+"TG","Togo",,,0.571,
+"SL","Sierra Leone",,,0.467,
+"LA","Laos",,,0.617,
+"TM","Turkmenistan",,,0.764,
+"LY","Libya",,,0.721,
+"KG","Kyrgyzstan",,,0.72,
+"PY","Paraguay",,,0.756,
+"NI","Nicaragua",,,0.706,
+"CG","Republic of the Congo",,,0.649,
+"SV","El Salvador",,5,0.678,75
+"LR","Liberia",,,0.51,
+"PS","Palestine",,,0.674,
+"CF","Central African Republic",,,0.414,
+"MR","Mauritania",,,0.563,
+"ER","Eritrea",,,0.503,
+"MN","Mongolia",,,0.747,
+"BA","Bosnia and Herzegovina",,,0.804,
+"NA","Namibia",,,0.665,
+"MD","Moldova",,,0.785,
+"JM","Jamaica",,,0.72,
+"GM","Gambia",,,0.524,
+"GA","Gabon",,,0.733,
+"BW","Botswana",,,0.731,
+"LS","Lesotho",,,0.55,
+"GW","Guinea-Bissau",,,0.514,
+"GQ","Equatorial Guinea",,,0.674,
+"BH","Bahrain",,11.2,0.899,
+"TT","Trinidad and Tobago",,,0.807,
+"TL","Timor-Leste",,,0.634,
+"MU","Mauritius",,,0.806,
+"SZ","Eswatini",,,0.695,
+"DJ","Djibouti",,,0.513,
+"FJ","Fiji",,,0.731,
+"KM","Comoros",,,0.603,
+"SB","Solomon Islands",,,0.584,
+"GY","Guyana",,,0.776,
+"BT","Bhutan",,,0.698,
+"SR","Suriname",,,0.722,
+"ME","Montenegro",,,0.862,
+"MV","Maldives",,,0.766,
+"CV","Cape Verde",,,0.668,
+"BN","Brunei",,,0.837,
+"BZ","Belize",,,0.721,
+"BS","Bahamas",,,0.82,
+"VU","Vanuatu",,,0.621,
+"BB","Barbados",,,0.811,
+"ST","Sao Tome and Principe",,,0.637,
+"WS","Samoa",,,0.708,
+"LC","Saint Lucia",,,0.748,
+"KI","Kiribati",,,0.644,
+"SC","Seychelles",,,0.848,
+"GD","Grenada",,,0.791,
+"FM","Micronesia",,,0.615,
+"TO","Tonga",,,0.769,
+"VC","Saint Vincent and the Grenadines",,,0.798,
+"AG","Antigua and Barbuda",,,0.851,
+"AD","Andorra",,,0.913,
+"DM","Dominica",,,0.761,
+"KN","Saint Kitts and Nevis",,,0.84,
+"LI","Liechtenstein",,,0.938,
+"MH","Marshall Islands",,,0.733,
+"SM","San Marino",,,0.915,
+"PW","Palau",,,0.786,
+"NR","Nauru",,,0.703,
+"TV","Tuvalu",,,0.689,

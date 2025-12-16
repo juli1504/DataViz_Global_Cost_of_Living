@@ -1,0 +1,193 @@
+"flagCode","country","HumanDevelopmentIndex_2020","QualityofLifeRankUSNews_2022"
+"LU","Luxembourg",0.921,
+"NL","Netherlands",0.938,7
+"DK","Denmark",0.946,2
+"OM","Oman",0.823,70
+"CH","Switzerland",0.957,5
+"FI","Finland",0.939,8
+"NO","Norway",0.963,4
+"IS","Iceland",0.955,
+"AT","Austria",0.916,11
+"DE","Germany",0.948,9
+"AU","Australia",0.948,6
+"NZ","New Zealand",0.935,10
+"SE","Sweden",0.944,3
+"US","United States",0.923,20
+"EE","Estonia",0.891,48
+"QA","Qatar",0.863,34
+"JP","Japan",0.917,13
+"ES","Spain",0.894,19
+"SI","Slovenia",0.91,54
+"HR","Croatia",0.86,37
+"LT","Lithuania",0.88,56
+"GB","United Kingdom",0.92,14
+"CZ","Czechia",0.891,
+"AE","United Arab Emirates",0.93,24
+"SA","Saudi Arabia",0.861,33
+"BE","Belgium",0.93,12
+"CA","Canada",0.928,100
+"IE","Ireland",0.945,15
+"FR","France",0.9,17
+"IL","Israel",0.906,36
+"PT","Portugal",0.861,21
+"LV","Latvia",0.873,50
+"KW","Kuwait",0.826,
+"CY","Cyprus",0.9,
+"SK","Slovakia",0.86,46
+"PL","Poland",0.874,25
+"SG","Singapore",0.942,16
+"IT","Italy",0.892,22
+"ZA","South Africa",0.722,
+"KR","South Korea",0.922,18
+"BG","Bulgaria",0.802,42
+"HU","Hungary",0.849,30
+"RO","Romania",0.828,44
+"GR","Greece",0.887,26
+"HK","Hong Kong",0.955,
+"UY","Uruguay",0.82,55
+"MY","Malaysia",0.802,28
+"MT","Malta",0.901,
+"BY","Belarus",0.8,72
+"TR","Turkey",0.835,40
+"EC","Ecuador",0.734,65
+"CR","Costa Rica",0.811,
+"GE","Georgia",0.807,
+"CN","China",0.781,23
+"MX","Mexico",0.757,41
+"RS","Serbia",0.806,74
+"JO","Jordan",0.74,68
+"PA","Panama",0.809,62
+"IN","India",0.638,38
+"MK","North Macedonia",0.766,
+"AR","Argentina",0.841,59
+"AM","Armenia",0.769,
+"TN","Tunisia",0.734,66
+"UA","Ukraine",0.762,61
+"AZ","Azerbaijan",0.722,73
+"MA","Morocco",0.683,47
+"RU","Russia",0.826,31
+"CL","Chile",0.849,43
+"KZ","Kazakhstan",0.806,71
+"CO","Colombia",0.756,60
+"PK","Pakistan",0.536,
+"AL","Albania",0.784,
+"LB","Lebanon",0.742,77
+"ID","Indonesia",0.712,35
+"PH","Philippines",0.705,39
+"VN","Vietnam",0.726,32
+"KE","Kenya",0.599,69
+"PE","Peru",0.758,57
+"IR","Iran",0.779,
+"EG","Egypt",0.729,51
+"LK","Sri Lanka",0.777,58
+"BD","Bangladesh",0.657,
+"VE","Venezuela",0.691,
+"NG","Nigeria",0.539,
+"BR","Brazil",0.758,52
+"ET","Ethiopia",0.489,
+"CD","DR Congo",0.477,
+"TH","Thailand",0.8,29
+"TZ","Tanzania",0.535,
+"MM","Myanmar",0.615,67
+"SD","Sudan",0.518,
+"UG","Uganda",0.545,
+"DZ","Algeria",0.73,
+"IQ","Iraq",0.661,78
+"AF","Afghanistan",0.488,
+"YE","Yemen",0.43,
+"AO","Angola",0.594,
+"UZ","Uzbekistan",0.716,76
+"MZ","Mozambique",0.467,
+"GH","Ghana",0.601,
+"MG","Madagascar",0.486,
+"CI","Ivory Coast",0.53,
+"CM","Cameroon",0.585,
+"NP","Nepal",0.593,
+"NE","Niger",0.391,
+"SY","Syria",0.561,
+"ML","Mali",0.407,
+"BF","Burkina Faso",0.446,
+"MW","Malawi",0.512,
+"ZM","Zambia",0.569,
+"TD","Chad",0.396,
+"SN","Senegal",0.514,
+"GT","Guatemala",0.638,64
+"KH","Cambodia",0.596,49
+"ZW","Zimbabwe",0.554,
+"GN","Guinea",0.471,
+"BJ","Benin",0.501,
+"RW","Rwanda",0.535,
+"BI","Burundi",0.419,
+"BO","Bolivia",0.691,
+"SS","South Sudan",0.386,
+"HT","Haiti",0.557,
+"DO","Dominican Republic",0.76,53
+"HN","Honduras",0.621,
+"CU","Cuba",0.759,
+"TJ","Tajikistan",0.656,
+"PG","Papua New Guinea",0.567,
+"TG","Togo",0.54,
+"SL","Sierra Leone",0.453,
+"LA","Laos",0.616,
+"TM","Turkmenistan",0.731,
+"LY","Libya",0.737,
+"KG","Kyrgyzstan",0.691,
+"PY","Paraguay",0.742,
+"NI","Nicaragua",0.652,
+"CG","Republic of the Congo",0.598,
+"SV","El Salvador",0.666,75
+"LR","Liberia",0.483,
+"PS","Palestine",0.715,
+"CF","Central African Republic",0.389,
+"MR","Mauritania",0.539,
+"ER","Eritrea",0.49,
+"MN","Mongolia",0.74,
+"BA","Bosnia and Herzegovina",0.776,
+"NA","Namibia",0.634,
+"MD","Moldova",0.765,
+"JM","Jamaica",0.707,
+"GM","Gambia",0.492,
+"GA","Gabon",0.704,
+"BW","Botswana",0.701,
+"LS","Lesotho",0.53,
+"GW","Guinea-Bissau",0.482,
+"GQ","Equatorial Guinea",0.65,
+"BH","Bahrain",0.884,
+"TT","Trinidad and Tobago",0.815,
+"TL","Timor-Leste",0.633,
+"MU","Mauritius",0.792,
+"SZ","Eswatini",0.622,
+"DJ","Djibouti",0.512,
+"FJ","Fiji",0.722,
+"KM","Comoros",0.588,
+"SB","Solomon Islands",0.566,
+"GY","Guyana",0.727,
+"BT","Bhutan",0.675,
+"SR","Suriname",0.702,
+"ME","Montenegro",0.832,
+"MV","Maldives",0.737,
+"CV","Cape Verde",0.649,
+"BN","Brunei",0.827,
+"BZ","Belize",0.705,
+"BS","Bahamas",0.798,
+"VU","Vanuatu",0.612,
+"BB","Barbados",0.803,
+"ST","Sao Tome and Principe",0.609,
+"WS","Samoa",0.712,
+"LC","Saint Lucia",0.724,
+"KI","Kiribati",0.629,
+"SC","Seychelles",0.799,
+"GD","Grenada",0.786,
+"FM","Micronesia",0.636,
+"TO","Tonga",0.742,
+"VC","Saint Vincent and the Grenadines",0.785,
+"AG","Antigua and Barbuda",0.82,
+"AD","Andorra",0.843,
+"DM","Dominica",0.738,
+"KN","Saint Kitts and Nevis",0.832,
+"LI","Liechtenstein",0.933,
+"MH","Marshall Islands",0.727,
+"SM","San Marino",0.844,
+"PW","Palau",0.794,
+"NR","Nauru",0.689,
+"TV","Tuvalu",0.655,

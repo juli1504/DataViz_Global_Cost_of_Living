@@ -1,0 +1,1554 @@
+[
+  {
+    "flagCode": "LU",
+    "country": "Luxembourg",
+    "QualityofLifeScoreNumbeo_2023": 200.1,
+    "QualityofLifeScoreUSNews_2023": 62.1,
+    "HumanDevelopmentIndex_2023": 0.922,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "NL",
+    "country": "Netherlands",
+    "QualityofLifeScoreNumbeo_2023": 200.1,
+    "QualityofLifeScoreUSNews_2023": 87.7,
+    "HumanDevelopmentIndex_2023": 0.955,
+    "QualityofLifeRankUSNews_2022": 7
+  },
+  {
+    "flagCode": "DK",
+    "country": "Denmark",
+    "QualityofLifeScoreNumbeo_2023": 190.6,
+    "QualityofLifeScoreUSNews_2023": 91.4,
+    "HumanDevelopmentIndex_2023": 0.962,
+    "QualityofLifeRankUSNews_2022": 2
+  },
+  {
+    "flagCode": "OM",
+    "country": "Oman",
+    "QualityofLifeScoreNumbeo_2023": 184.8,
+    "QualityofLifeScoreUSNews_2023": 8.9,
+    "HumanDevelopmentIndex_2023": 0.858,
+    "QualityofLifeRankUSNews_2022": 70
+  },
+  {
+    "flagCode": "CH",
+    "country": "Switzerland",
+    "QualityofLifeScoreNumbeo_2023": 185.8,
+    "QualityofLifeScoreUSNews_2023": 90.3,
+    "HumanDevelopmentIndex_2023": 0.97,
+    "QualityofLifeRankUSNews_2022": 5
+  },
+  {
+    "flagCode": "FI",
+    "country": "Finland",
+    "QualityofLifeScoreNumbeo_2023": 188.1,
+    "QualityofLifeScoreUSNews_2023": 90.6,
+    "HumanDevelopmentIndex_2023": 0.948,
+    "QualityofLifeRankUSNews_2022": 8
+  },
+  {
+    "flagCode": "NO",
+    "country": "Norway",
+    "QualityofLifeScoreNumbeo_2023": 181.8,
+    "QualityofLifeScoreUSNews_2023": 93.6,
+    "HumanDevelopmentIndex_2023": 0.97,
+    "QualityofLifeRankUSNews_2022": 4
+  },
+  {
+    "flagCode": "IS",
+    "country": "Iceland",
+    "QualityofLifeScoreNumbeo_2023": 191.1,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.972,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "AT",
+    "country": "Austria",
+    "QualityofLifeScoreNumbeo_2023": 183.3,
+    "QualityofLifeScoreUSNews_2023": 78.9,
+    "HumanDevelopmentIndex_2023": 0.93,
+    "QualityofLifeRankUSNews_2022": 11
+  },
+  {
+    "flagCode": "DE",
+    "country": "Germany",
+    "QualityofLifeScoreNumbeo_2023": 176,
+    "QualityofLifeScoreUSNews_2023": 85.8,
+    "HumanDevelopmentIndex_2023": 0.959,
+    "QualityofLifeRankUSNews_2022": 9
+  },
+  {
+    "flagCode": "AU",
+    "country": "Australia",
+    "QualityofLifeScoreNumbeo_2023": 165.7,
+    "QualityofLifeScoreUSNews_2023": 86.8,
+    "HumanDevelopmentIndex_2023": 0.958,
+    "QualityofLifeRankUSNews_2022": 6
+  },
+  {
+    "flagCode": "NZ",
+    "country": "New Zealand",
+    "QualityofLifeScoreNumbeo_2023": 170.9,
+    "QualityofLifeScoreUSNews_2023": 80,
+    "HumanDevelopmentIndex_2023": 0.938,
+    "QualityofLifeRankUSNews_2022": 10
+  },
+  {
+    "flagCode": "SE",
+    "country": "Sweden",
+    "QualityofLifeScoreNumbeo_2023": 174.8,
+    "QualityofLifeScoreUSNews_2023": 100,
+    "HumanDevelopmentIndex_2023": 0.959,
+    "QualityofLifeRankUSNews_2022": 3
+  },
+  {
+    "flagCode": "US",
+    "country": "United States",
+    "QualityofLifeScoreNumbeo_2023": 173,
+    "QualityofLifeScoreUSNews_2023": 49.1,
+    "HumanDevelopmentIndex_2023": 0.938,
+    "QualityofLifeRankUSNews_2022": 20
+  },
+  {
+    "flagCode": "EE",
+    "country": "Estonia",
+    "QualityofLifeScoreNumbeo_2023": 176.4,
+    "QualityofLifeScoreUSNews_2023": 17.5,
+    "HumanDevelopmentIndex_2023": 0.905,
+    "QualityofLifeRankUSNews_2022": 48
+  },
+  {
+    "flagCode": "QA",
+    "country": "Qatar",
+    "QualityofLifeScoreNumbeo_2023": 166.6,
+    "QualityofLifeScoreUSNews_2023": 33.9,
+    "HumanDevelopmentIndex_2023": 0.886,
+    "QualityofLifeRankUSNews_2022": 34
+  },
+  {
+    "flagCode": "JP",
+    "country": "Japan",
+    "QualityofLifeScoreNumbeo_2023": 175.5,
+    "QualityofLifeScoreUSNews_2023": 69.6,
+    "HumanDevelopmentIndex_2023": 0.925,
+    "QualityofLifeRankUSNews_2022": 13
+  },
+  {
+    "flagCode": "ES",
+    "country": "Spain",
+    "QualityofLifeScoreNumbeo_2023": 177.7,
+    "QualityofLifeScoreUSNews_2023": 59,
+    "HumanDevelopmentIndex_2023": 0.918,
+    "QualityofLifeRankUSNews_2022": 19
+  },
+  {
+    "flagCode": "SI",
+    "country": "Slovenia",
+    "QualityofLifeScoreNumbeo_2023": 169.3,
+    "QualityofLifeScoreUSNews_2023": 15.4,
+    "HumanDevelopmentIndex_2023": 0.931,
+    "QualityofLifeRankUSNews_2022": 54
+  },
+  {
+    "flagCode": "HR",
+    "country": "Croatia",
+    "QualityofLifeScoreNumbeo_2023": 161.6,
+    "QualityofLifeScoreUSNews_2023": 24.9,
+    "HumanDevelopmentIndex_2023": 0.889,
+    "QualityofLifeRankUSNews_2022": 37
+  },
+  {
+    "flagCode": "LT",
+    "country": "Lithuania",
+    "QualityofLifeScoreNumbeo_2023": 160.4,
+    "QualityofLifeScoreUSNews_2023": 11.7,
+    "HumanDevelopmentIndex_2023": 0.895,
+    "QualityofLifeRankUSNews_2022": 56
+  },
+  {
+    "flagCode": "GB",
+    "country": "United Kingdom",
+    "QualityofLifeScoreNumbeo_2023": 164.2,
+    "QualityofLifeScoreUSNews_2023": 73.9,
+    "HumanDevelopmentIndex_2023": 0.946,
+    "QualityofLifeRankUSNews_2022": 14
+  },
+  {
+    "flagCode": "CZ",
+    "country": "Czechia",
+    "QualityofLifeScoreNumbeo_2023": 162.3,
+    "QualityofLifeScoreUSNews_2023": 28.5,
+    "HumanDevelopmentIndex_2023": 0.915,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "AE",
+    "country": "United Arab Emirates",
+    "QualityofLifeScoreNumbeo_2023": 173.8,
+    "QualityofLifeScoreUSNews_2023": 41.2,
+    "HumanDevelopmentIndex_2023": 0.94,
+    "QualityofLifeRankUSNews_2022": 24
+  },
+  {
+    "flagCode": "SA",
+    "country": "Saudi Arabia",
+    "QualityofLifeScoreNumbeo_2023": 150.7,
+    "QualityofLifeScoreUSNews_2023": 27.6,
+    "HumanDevelopmentIndex_2023": 0.9,
+    "QualityofLifeRankUSNews_2022": 33
+  },
+  {
+    "flagCode": "BE",
+    "country": "Belgium",
+    "QualityofLifeScoreNumbeo_2023": 156.4,
+    "QualityofLifeScoreUSNews_2023": 79.7,
+    "HumanDevelopmentIndex_2023": 0.951,
+    "QualityofLifeRankUSNews_2022": 12
+  },
+  {
+    "flagCode": "CA",
+    "country": "Canada",
+    "QualityofLifeScoreNumbeo_2023": 156.4,
+    "QualityofLifeScoreUSNews_2023": 92.7,
+    "HumanDevelopmentIndex_2023": 0.939,
+    "QualityofLifeRankUSNews_2022": 100
+  },
+  {
+    "flagCode": "IE",
+    "country": "Ireland",
+    "QualityofLifeScoreNumbeo_2023": 153.2,
+    "QualityofLifeScoreUSNews_2023": 62.7,
+    "HumanDevelopmentIndex_2023": 0.949,
+    "QualityofLifeRankUSNews_2022": 15
+  },
+  {
+    "flagCode": "FR",
+    "country": "France",
+    "QualityofLifeScoreNumbeo_2023": 153.2,
+    "QualityofLifeScoreUSNews_2023": 59.6,
+    "HumanDevelopmentIndex_2023": 0.92,
+    "QualityofLifeRankUSNews_2022": 17
+  },
+  {
+    "flagCode": "IL",
+    "country": "Israel",
+    "QualityofLifeScoreNumbeo_2023": 147.2,
+    "QualityofLifeScoreUSNews_2023": 17.8,
+    "HumanDevelopmentIndex_2023": 0.919,
+    "QualityofLifeRankUSNews_2022": 36
+  },
+  {
+    "flagCode": "PT",
+    "country": "Portugal",
+    "QualityofLifeScoreNumbeo_2023": 166.5,
+    "QualityofLifeScoreUSNews_2023": 58,
+    "HumanDevelopmentIndex_2023": 0.89,
+    "QualityofLifeRankUSNews_2022": 21
+  },
+  {
+    "flagCode": "LV",
+    "country": "Latvia",
+    "QualityofLifeScoreNumbeo_2023": 152.6,
+    "QualityofLifeScoreUSNews_2023": 10.1,
+    "HumanDevelopmentIndex_2023": 0.889,
+    "QualityofLifeRankUSNews_2022": 50
+  },
+  {
+    "flagCode": "KW",
+    "country": "Kuwait",
+    "QualityofLifeScoreNumbeo_2023": 129.7,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.852,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "CY",
+    "country": "Cyprus",
+    "QualityofLifeScoreNumbeo_2023": 146.5,
+    "QualityofLifeScoreUSNews_2023": 13.4,
+    "HumanDevelopmentIndex_2023": 0.913,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "TW",
+    "country": "Taiwan",
+    "QualityofLifeScoreNumbeo_2023": 144.9,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": null,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "SK",
+    "country": "Slovakia",
+    "QualityofLifeScoreNumbeo_2023": 148.2,
+    "QualityofLifeScoreUSNews_2023": 16.1,
+    "HumanDevelopmentIndex_2023": 0.88,
+    "QualityofLifeRankUSNews_2022": 46
+  },
+  {
+    "flagCode": "PL",
+    "country": "Poland",
+    "QualityofLifeScoreNumbeo_2023": 139.6,
+    "QualityofLifeScoreUSNews_2023": 49.4,
+    "HumanDevelopmentIndex_2023": 0.906,
+    "QualityofLifeRankUSNews_2022": 25
+  },
+  {
+    "flagCode": "SG",
+    "country": "Singapore",
+    "QualityofLifeScoreNumbeo_2023": 153.2,
+    "QualityofLifeScoreUSNews_2023": 50.3,
+    "HumanDevelopmentIndex_2023": 0.946,
+    "QualityofLifeRankUSNews_2022": 16
+  },
+  {
+    "flagCode": "IT",
+    "country": "Italy",
+    "QualityofLifeScoreNumbeo_2023": 140.3,
+    "QualityofLifeScoreUSNews_2023": 51.4,
+    "HumanDevelopmentIndex_2023": 0.915,
+    "QualityofLifeRankUSNews_2022": 22
+  },
+  {
+    "flagCode": "ZA",
+    "country": "South Africa",
+    "QualityofLifeScoreNumbeo_2023": 136.9,
+    "QualityofLifeScoreUSNews_2023": 12.7,
+    "HumanDevelopmentIndex_2023": 0.741,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "KR",
+    "country": "South Korea",
+    "QualityofLifeScoreNumbeo_2023": 138.1,
+    "QualityofLifeScoreUSNews_2023": 45.2,
+    "HumanDevelopmentIndex_2023": 0.937,
+    "QualityofLifeRankUSNews_2022": 18
+  },
+  {
+    "flagCode": "BG",
+    "country": "Bulgaria",
+    "QualityofLifeScoreNumbeo_2023": 131.4,
+    "QualityofLifeScoreUSNews_2023": 18.3,
+    "HumanDevelopmentIndex_2023": 0.845,
+    "QualityofLifeRankUSNews_2022": 42
+  },
+  {
+    "flagCode": "HU",
+    "country": "Hungary",
+    "QualityofLifeScoreNumbeo_2023": 131.6,
+    "QualityofLifeScoreUSNews_2023": 24.3,
+    "HumanDevelopmentIndex_2023": 0.87,
+    "QualityofLifeRankUSNews_2022": 30
+  },
+  {
+    "flagCode": "RO",
+    "country": "Romania",
+    "QualityofLifeScoreNumbeo_2023": 129.9,
+    "QualityofLifeScoreUSNews_2023": 18.8,
+    "HumanDevelopmentIndex_2023": 0.845,
+    "QualityofLifeRankUSNews_2022": 44
+  },
+  {
+    "flagCode": "GR",
+    "country": "Greece",
+    "QualityofLifeScoreNumbeo_2023": 128.9,
+    "QualityofLifeScoreUSNews_2023": 32.4,
+    "HumanDevelopmentIndex_2023": 0.908,
+    "QualityofLifeRankUSNews_2022": 26
+  },
+  {
+    "flagCode": "HK",
+    "country": "Hong Kong",
+    "QualityofLifeScoreNumbeo_2023": 105.5,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.955,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "UY",
+    "country": "Uruguay",
+    "QualityofLifeScoreNumbeo_2023": 136.2,
+    "QualityofLifeScoreUSNews_2023": 11,
+    "HumanDevelopmentIndex_2023": 0.862,
+    "QualityofLifeRankUSNews_2022": 55
+  },
+  {
+    "flagCode": "MY",
+    "country": "Malaysia",
+    "QualityofLifeScoreNumbeo_2023": 123.4,
+    "QualityofLifeScoreUSNews_2023": 26.4,
+    "HumanDevelopmentIndex_2023": 0.819,
+    "QualityofLifeRankUSNews_2022": 28
+  },
+  {
+    "flagCode": "MT",
+    "country": "Malta",
+    "QualityofLifeScoreNumbeo_2023": 121.8,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.924,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "BY",
+    "country": "Belarus",
+    "QualityofLifeScoreNumbeo_2023": 117,
+    "QualityofLifeScoreUSNews_2023": 3.1,
+    "HumanDevelopmentIndex_2023": 0.824,
+    "QualityofLifeRankUSNews_2022": 72
+  },
+  {
+    "flagCode": "TR",
+    "country": "Turkey",
+    "QualityofLifeScoreNumbeo_2023": 118.3,
+    "QualityofLifeScoreUSNews_2023": 25.6,
+    "HumanDevelopmentIndex_2023": 0.853,
+    "QualityofLifeRankUSNews_2022": 40
+  },
+  {
+    "flagCode": "EC",
+    "country": "Ecuador",
+    "QualityofLifeScoreNumbeo_2023": 119.8,
+    "QualityofLifeScoreUSNews_2023": 7.8,
+    "HumanDevelopmentIndex_2023": 0.777,
+    "QualityofLifeRankUSNews_2022": 65
+  },
+  {
+    "flagCode": "CR",
+    "country": "Costa Rica",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": 14.6,
+    "HumanDevelopmentIndex_2023": 0.833,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "GE",
+    "country": "Georgia",
+    "QualityofLifeScoreNumbeo_2023": 116,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.844,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "CN",
+    "country": "China",
+    "QualityofLifeScoreNumbeo_2023": 105.1,
+    "QualityofLifeScoreUSNews_2023": 76.1,
+    "HumanDevelopmentIndex_2023": 0.797,
+    "QualityofLifeRankUSNews_2022": 23
+  },
+  {
+    "flagCode": "MX",
+    "country": "Mexico",
+    "QualityofLifeScoreNumbeo_2023": 125,
+    "QualityofLifeScoreUSNews_2023": 18.5,
+    "HumanDevelopmentIndex_2023": 0.789,
+    "QualityofLifeRankUSNews_2022": 41
+  },
+  {
+    "flagCode": "RS",
+    "country": "Serbia",
+    "QualityofLifeScoreNumbeo_2023": 113.1,
+    "QualityofLifeScoreUSNews_2023": 6.1,
+    "HumanDevelopmentIndex_2023": 0.833,
+    "QualityofLifeRankUSNews_2022": 74
+  },
+  {
+    "flagCode": "JO",
+    "country": "Jordan",
+    "QualityofLifeScoreNumbeo_2023": 116.3,
+    "QualityofLifeScoreUSNews_2023": 8,
+    "HumanDevelopmentIndex_2023": 0.754,
+    "QualityofLifeRankUSNews_2022": 68
+  },
+  {
+    "flagCode": "PA",
+    "country": "Panama",
+    "QualityofLifeScoreNumbeo_2023": 116.8,
+    "QualityofLifeScoreUSNews_2023": 7,
+    "HumanDevelopmentIndex_2023": 0.839,
+    "QualityofLifeRankUSNews_2022": 62
+  },
+  {
+    "flagCode": "IN",
+    "country": "India",
+    "QualityofLifeScoreNumbeo_2023": 116.1,
+    "QualityofLifeScoreUSNews_2023": 19,
+    "HumanDevelopmentIndex_2023": 0.685,
+    "QualityofLifeRankUSNews_2022": 38
+  },
+  {
+    "flagCode": "MK",
+    "country": "North Macedonia",
+    "QualityofLifeScoreNumbeo_2023": 109.4,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.815,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "AR",
+    "country": "Argentina",
+    "QualityofLifeScoreNumbeo_2023": 110.2,
+    "QualityofLifeScoreUSNews_2023": 17.5,
+    "HumanDevelopmentIndex_2023": 0.865,
+    "QualityofLifeRankUSNews_2022": 59
+  },
+  {
+    "flagCode": "AM",
+    "country": "Armenia",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.811,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "TN",
+    "country": "Tunisia",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": 9.2,
+    "HumanDevelopmentIndex_2023": 0.746,
+    "QualityofLifeRankUSNews_2022": 66
+  },
+  {
+    "flagCode": "UA",
+    "country": "Ukraine",
+    "QualityofLifeScoreNumbeo_2023": 107.3,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.779,
+    "QualityofLifeRankUSNews_2022": 61
+  },
+  {
+    "flagCode": "AZ",
+    "country": "Azerbaijan",
+    "QualityofLifeScoreNumbeo_2023": 108.5,
+    "QualityofLifeScoreUSNews_2023": 3.4,
+    "HumanDevelopmentIndex_2023": 0.789,
+    "QualityofLifeRankUSNews_2022": 73
+  },
+  {
+    "flagCode": "MA",
+    "country": "Morocco",
+    "QualityofLifeScoreNumbeo_2023": 104.7,
+    "QualityofLifeScoreUSNews_2023": 16,
+    "HumanDevelopmentIndex_2023": 0.71,
+    "QualityofLifeRankUSNews_2022": 47
+  },
+  {
+    "flagCode": "RU",
+    "country": "Russia",
+    "QualityofLifeScoreNumbeo_2023": 104.2,
+    "QualityofLifeScoreUSNews_2023": 14.5,
+    "HumanDevelopmentIndex_2023": 0.832,
+    "QualityofLifeRankUSNews_2022": 31
+  },
+  {
+    "flagCode": "CL",
+    "country": "Chile",
+    "QualityofLifeScoreNumbeo_2023": 99.1,
+    "QualityofLifeScoreUSNews_2023": 13.5,
+    "HumanDevelopmentIndex_2023": 0.878,
+    "QualityofLifeRankUSNews_2022": 43
+  },
+  {
+    "flagCode": "KZ",
+    "country": "Kazakhstan",
+    "QualityofLifeScoreNumbeo_2023": 96.5,
+    "QualityofLifeScoreUSNews_2023": 3.8,
+    "HumanDevelopmentIndex_2023": 0.837,
+    "QualityofLifeRankUSNews_2022": 71
+  },
+  {
+    "flagCode": "CO",
+    "country": "Colombia",
+    "QualityofLifeScoreNumbeo_2023": 99.2,
+    "QualityofLifeScoreUSNews_2023": 8.6,
+    "HumanDevelopmentIndex_2023": 0.788,
+    "QualityofLifeRankUSNews_2022": 60
+  },
+  {
+    "flagCode": "PK",
+    "country": "Pakistan",
+    "QualityofLifeScoreNumbeo_2023": 101.4,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.544,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "AL",
+    "country": "Albania",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.81,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "LB",
+    "country": "Lebanon",
+    "QualityofLifeScoreNumbeo_2023": 82.4,
+    "QualityofLifeScoreUSNews_2023": 2.1,
+    "HumanDevelopmentIndex_2023": 0.752,
+    "QualityofLifeRankUSNews_2022": 77
+  },
+  {
+    "flagCode": "ID",
+    "country": "Indonesia",
+    "QualityofLifeScoreNumbeo_2023": 92,
+    "QualityofLifeScoreUSNews_2023": 20,
+    "HumanDevelopmentIndex_2023": 0.728,
+    "QualityofLifeRankUSNews_2022": 35
+  },
+  {
+    "flagCode": "PH",
+    "country": "Philippines",
+    "QualityofLifeScoreNumbeo_2023": 82.1,
+    "QualityofLifeScoreUSNews_2023": 20.3,
+    "HumanDevelopmentIndex_2023": 0.72,
+    "QualityofLifeRankUSNews_2022": 39
+  },
+  {
+    "flagCode": "VN",
+    "country": "Vietnam",
+    "QualityofLifeScoreNumbeo_2023": 89.3,
+    "QualityofLifeScoreUSNews_2023": 20.5,
+    "HumanDevelopmentIndex_2023": 0.766,
+    "QualityofLifeRankUSNews_2022": 32
+  },
+  {
+    "flagCode": "KE",
+    "country": "Kenya",
+    "QualityofLifeScoreNumbeo_2023": 103.5,
+    "QualityofLifeScoreUSNews_2023": 7.3,
+    "HumanDevelopmentIndex_2023": 0.628,
+    "QualityofLifeRankUSNews_2022": 69
+  },
+  {
+    "flagCode": "PE",
+    "country": "Peru",
+    "QualityofLifeScoreNumbeo_2023": 80.3,
+    "QualityofLifeScoreUSNews_2023": 10.5,
+    "HumanDevelopmentIndex_2023": 0.794,
+    "QualityofLifeRankUSNews_2022": 57
+  },
+  {
+    "flagCode": "IR",
+    "country": "Iran",
+    "QualityofLifeScoreNumbeo_2023": 77.6,
+    "QualityofLifeScoreUSNews_2023": 0.8,
+    "HumanDevelopmentIndex_2023": 0.799,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "EG",
+    "country": "Egypt",
+    "QualityofLifeScoreNumbeo_2023": 88.6,
+    "QualityofLifeScoreUSNews_2023": 13.8,
+    "HumanDevelopmentIndex_2023": 0.754,
+    "QualityofLifeRankUSNews_2022": 51
+  },
+  {
+    "flagCode": "LK",
+    "country": "Sri Lanka",
+    "QualityofLifeScoreNumbeo_2023": 76.5,
+    "QualityofLifeScoreUSNews_2023": 8.9,
+    "HumanDevelopmentIndex_2023": 0.776,
+    "QualityofLifeRankUSNews_2022": 58
+  },
+  {
+    "flagCode": "BD",
+    "country": "Bangladesh",
+    "QualityofLifeScoreNumbeo_2023": 69.5,
+    "QualityofLifeScoreUSNews_2023": 11.4,
+    "HumanDevelopmentIndex_2023": 0.685,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "VE",
+    "country": "Venezuela",
+    "QualityofLifeScoreNumbeo_2023": 74.4,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.709,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "NG",
+    "country": "Nigeria",
+    "QualityofLifeScoreNumbeo_2023": 49.5,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.56,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "BR",
+    "country": "Brazil",
+    "QualityofLifeScoreNumbeo_2023": 106.8,
+    "QualityofLifeScoreUSNews_2023": 17,
+    "HumanDevelopmentIndex_2023": 0.786,
+    "QualityofLifeRankUSNews_2022": 52
+  },
+  {
+    "flagCode": "ET",
+    "country": "Ethiopia",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.497,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "CD",
+    "country": "DR Congo",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.522,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "TH",
+    "country": "Thailand",
+    "QualityofLifeScoreNumbeo_2023": 98.5,
+    "QualityofLifeScoreUSNews_2023": 24.8,
+    "HumanDevelopmentIndex_2023": 0.798,
+    "QualityofLifeRankUSNews_2022": 29
+  },
+  {
+    "flagCode": "TZ",
+    "country": "Tanzania",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.555,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "MM",
+    "country": "Myanmar",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.609,
+    "QualityofLifeRankUSNews_2022": 67
+  },
+  {
+    "flagCode": "SD",
+    "country": "Sudan",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.511,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "UG",
+    "country": "Uganda",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.582,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "DZ",
+    "country": "Algeria",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": 4.1,
+    "HumanDevelopmentIndex_2023": 0.763,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "IQ",
+    "country": "Iraq",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.695,
+    "QualityofLifeRankUSNews_2022": 78
+  },
+  {
+    "flagCode": "AF",
+    "country": "Afghanistan",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.496,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "YE",
+    "country": "Yemen",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.47,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "AO",
+    "country": "Angola",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.616,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "UZ",
+    "country": "Uzbekistan",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": 3.2,
+    "HumanDevelopmentIndex_2023": 0.74,
+    "QualityofLifeRankUSNews_2022": 76
+  },
+  {
+    "flagCode": "MZ",
+    "country": "Mozambique",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.493,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "GH",
+    "country": "Ghana",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": 6.6,
+    "HumanDevelopmentIndex_2023": 0.628,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "MG",
+    "country": "Madagascar",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.487,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "CI",
+    "country": "Ivory Coast",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.582,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "CM",
+    "country": "Cameroon",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": 5.2,
+    "HumanDevelopmentIndex_2023": 0.588,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "NP",
+    "country": "Nepal",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.622,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "NE",
+    "country": "Niger",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.419,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "SY",
+    "country": "Syria",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.564,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "ML",
+    "country": "Mali",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.419,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "BF",
+    "country": "Burkina Faso",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.459,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "MW",
+    "country": "Malawi",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.517,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "ZM",
+    "country": "Zambia",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.595,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "TD",
+    "country": "Chad",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.416,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "SO",
+    "country": "Somalia",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.404,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "SN",
+    "country": "Senegal",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.53,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "GT",
+    "country": "Guatemala",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": 5.4,
+    "HumanDevelopmentIndex_2023": 0.662,
+    "QualityofLifeRankUSNews_2022": 64
+  },
+  {
+    "flagCode": "KH",
+    "country": "Cambodia",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": 12.2,
+    "HumanDevelopmentIndex_2023": 0.606,
+    "QualityofLifeRankUSNews_2022": 49
+  },
+  {
+    "flagCode": "ZW",
+    "country": "Zimbabwe",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": 4.8,
+    "HumanDevelopmentIndex_2023": 0.598,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "GN",
+    "country": "Guinea",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.5,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "BJ",
+    "country": "Benin",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.515,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "RW",
+    "country": "Rwanda",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.578,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "BI",
+    "country": "Burundi",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.439,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "BO",
+    "country": "Bolivia",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.733,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "SS",
+    "country": "South Sudan",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.388,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "HT",
+    "country": "Haiti",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.554,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "DO",
+    "country": "Dominican Republic",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": 10.8,
+    "HumanDevelopmentIndex_2023": 0.776,
+    "QualityofLifeRankUSNews_2022": 53
+  },
+  {
+    "flagCode": "HN",
+    "country": "Honduras",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": 4.1,
+    "HumanDevelopmentIndex_2023": 0.645,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "CU",
+    "country": "Cuba",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.762,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "TJ",
+    "country": "Tajikistan",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.691,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "PG",
+    "country": "Papua New Guinea",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.576,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "TG",
+    "country": "Togo",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.571,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "SL",
+    "country": "Sierra Leone",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.467,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "LA",
+    "country": "Laos",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.617,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "TM",
+    "country": "Turkmenistan",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.764,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "LY",
+    "country": "Libya",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.721,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "KG",
+    "country": "Kyrgyzstan",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.72,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "PY",
+    "country": "Paraguay",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.756,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "NI",
+    "country": "Nicaragua",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.706,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "CG",
+    "country": "Republic of the Congo",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.649,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "SV",
+    "country": "El Salvador",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": 5,
+    "HumanDevelopmentIndex_2023": 0.678,
+    "QualityofLifeRankUSNews_2022": 75
+  },
+  {
+    "flagCode": "LR",
+    "country": "Liberia",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.51,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "PS",
+    "country": "Palestine",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.674,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "CF",
+    "country": "Central African Republic",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.414,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "MR",
+    "country": "Mauritania",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.563,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "ER",
+    "country": "Eritrea",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.503,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "MN",
+    "country": "Mongolia",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.747,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "BA",
+    "country": "Bosnia and Herzegovina",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.804,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "NA",
+    "country": "Namibia",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.665,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "MD",
+    "country": "Moldova",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.785,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "JM",
+    "country": "Jamaica",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.72,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "GM",
+    "country": "Gambia",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.524,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "GA",
+    "country": "Gabon",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.733,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "BW",
+    "country": "Botswana",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.731,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "LS",
+    "country": "Lesotho",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.55,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "GW",
+    "country": "Guinea-Bissau",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.514,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "GQ",
+    "country": "Equatorial Guinea",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.674,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "BH",
+    "country": "Bahrain",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": 11.2,
+    "HumanDevelopmentIndex_2023": 0.899,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "TT",
+    "country": "Trinidad and Tobago",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.807,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "TL",
+    "country": "Timor-Leste",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.634,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "MU",
+    "country": "Mauritius",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.806,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "SZ",
+    "country": "Eswatini",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.695,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "DJ",
+    "country": "Djibouti",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.513,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "FJ",
+    "country": "Fiji",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.731,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "KM",
+    "country": "Comoros",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.603,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "SB",
+    "country": "Solomon Islands",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.584,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "GY",
+    "country": "Guyana",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.776,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "BT",
+    "country": "Bhutan",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.698,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "SR",
+    "country": "Suriname",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.722,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "ME",
+    "country": "Montenegro",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.862,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "MV",
+    "country": "Maldives",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.766,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "CV",
+    "country": "Cape Verde",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.668,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "BN",
+    "country": "Brunei",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.837,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "BZ",
+    "country": "Belize",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.721,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "BS",
+    "country": "Bahamas",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.82,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "VU",
+    "country": "Vanuatu",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.621,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "BB",
+    "country": "Barbados",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.811,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "ST",
+    "country": "Sao Tome and Principe",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.637,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "WS",
+    "country": "Samoa",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.708,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "LC",
+    "country": "Saint Lucia",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.748,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "KI",
+    "country": "Kiribati",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.644,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "SC",
+    "country": "Seychelles",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.848,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "GD",
+    "country": "Grenada",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.791,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "FM",
+    "country": "Micronesia",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.615,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "TO",
+    "country": "Tonga",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.769,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "VC",
+    "country": "Saint Vincent and the Grenadines",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.798,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "AG",
+    "country": "Antigua and Barbuda",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.851,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "AD",
+    "country": "Andorra",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.913,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "DM",
+    "country": "Dominica",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.761,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "KN",
+    "country": "Saint Kitts and Nevis",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.84,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "LI",
+    "country": "Liechtenstein",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.938,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "MH",
+    "country": "Marshall Islands",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.733,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "SM",
+    "country": "San Marino",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.915,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "PW",
+    "country": "Palau",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.786,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "NR",
+    "country": "Nauru",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.703,
+    "QualityofLifeRankUSNews_2022": null
+  },
+  {
+    "flagCode": "TV",
+    "country": "Tuvalu",
+    "QualityofLifeScoreNumbeo_2023": null,
+    "QualityofLifeScoreUSNews_2023": null,
+    "HumanDevelopmentIndex_2023": 0.689,
+    "QualityofLifeRankUSNews_2022": null
+  }
+]
