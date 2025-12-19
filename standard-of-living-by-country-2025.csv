@@ -1,0 +1,193 @@
+"flagCode","country","QualityofLifeScoreNumbeo_2025","QualityofLifeScoreUSNews_2025","QualityofLifeScoreCEOWorld_2025","QualityofLifeRankUSNews_2022"
+"LU","Luxembourg",218.2,61.7,92.52,
+"NL","Netherlands",216.5,85.6,95.7,7
+"DK","Denmark",215.1,100,96.92,2
+"OM","Oman",215.1,8.8,80.77,70
+"CH","Switzerland",210.9,96.5,97.9,5
+"FI","Finland",208.3,90,95.12,8
+"NO","Norway",199.2,94.3,97.87,4
+"IS","Iceland",198,58,97.47,
+"AT","Austria",197.7,78.8,92.5,11
+"DE","Germany",195.2,88.7,96.54,9
+"AU","Australia",195.1,88.1,95.78,6
+"NZ","New Zealand",194.7,81.5,93.74,10
+"SE","Sweden",192.2,99.9,97.28,3
+"US","United States",192.1,55.4,93.07,20
+"EE","Estonia",189.8,14.9,89.72,48
+"QA","Qatar",189.4,36.2,87.22,34
+"JP","Japan",188.8,73.1,92.34,13
+"ES","Spain",187.2,59.8,90.37,19
+"SI","Slovenia",182.4,15,92.4,54
+"HR","Croatia",181.7,25,87.47,37
+"LT","Lithuania",178.8,16.2,88.37,56
+"GB","United Kingdom",177.2,80.5,93.82,14
+"CZ","Czechia",176.3,31.4,89.56,
+"AE","United Arab Emirates",174.2,46.9,93.68,24
+"SA","Saudi Arabia",173.7,30.8,87.43,33
+"BE","Belgium",173.7,76.4,95.18,12
+"CA","Canada",170.5,94.2,88.21,100
+"IE","Ireland",169.6,69.8,96.08,15
+"FR","France",169.5,61.8,90.22,17
+"IL","Israel",169.5,12.7,91.88,36
+"PT","Portugal",169.1,57.8,87,21
+"LV","Latvia",168.1,14.9,87.85,50
+"KW","Kuwait",167.9,15.9,84.54,
+"CY","Cyprus",160.4,14.5,90.1,
+"TW","Taiwan",160.2,,93.66,
+"SK","Slovakia",159.4,14.6,86.31,46
+"PL","Poland",157.2,51.7,88.42,25
+"SG","Singapore",156.7,53.1,95.9,16
+"PR","Puerto Rico",156.6,,,
+"IT","Italy",154.4,55.4,89.76,22
+"ZA","South Africa",153.8,13.8,,
+"KR","South Korea",153.5,50.3,93.23,18
+"BG","Bulgaria",148.3,18.3,78.6,42
+"HU","Hungary",147.1,30.7,86.04,30
+"RO","Romania",145.1,18.3,83.05,44
+"GR","Greece",140.4,34.5,,26
+"HK","Hong Kong",139,,97.31,
+"UY","Uruguay",137.2,11.5,83.59,55
+"MY","Malaysia",136.7,30.1,79.53,28
+"MT","Malta",136.1,,90.78,
+"BY","Belarus",134.8,,78.97,72
+"TR","Turkey",134,28.4,86.59,40
+"EC","Ecuador",130.8,7.5,75.85,65
+"CR","Costa Rica",130.2,14.1,79.42,
+"GE","Georgia",129.1,,80.55,
+"CN","China",127.7,49.4,77.25,23
+"MX","Mexico",127.4,23.3,77.04,41
+"RS","Serbia",127.2,5.6,79.4,74
+"JO","Jordan",126.9,7.1,72.31,68
+"PA","Panama",125.6,7.2,81.57,62
+"IN","India",124.4,20.9,,38
+"MK","North Macedonia",123.5,,75.29,
+"AR","Argentina",122.1,16.4,85.09,59
+"AM","Armenia",120.2,,77.08,
+"TN","Tunisia",119,8.3,,66
+"UA","Ukraine",117.8,,72.15,61
+"AZ","Azerbaijan",114.4,4.2,74.32,73
+"MA","Morocco",114.1,17.8,,47
+"RU","Russia",113.5,17.7,81.84,31
+"CL","Chile",112.1,14.7,86.69,43
+"KZ","Kazakhstan",108.2,4,79.32,71
+"CO","Colombia",106.3,9.3,73.82,60
+"PK","Pakistan",105.7,,54.32,
+"AL","Albania",104.1,,77.27,
+"LB","Lebanon",102.8,,69.82,77
+"ID","Indonesia",101.6,21.5,68.68,35
+"PH","Philippines",98.1,20.2,68.63,39
+"VN","Vietnam",96.6,21.8,70.72,32
+"KE","Kenya",95.4,6.3,58.83,69
+"PE","Peru",90.7,12.1,74.87,57
+"IR","Iran",86.7,,76.68,
+"EG","Egypt",83.2,13.4,71.17,51
+"LK","Sri Lanka",82.8,8.3,76.55,58
+"BD","Bangladesh",77,10.8,63.11,
+"VE","Venezuela",73.7,,67.69,
+"NG","Nigeria",15.6,,54.69,
+"BR","Brazil",,20.3,74.49,52
+"ET","Ethiopia",,,51.95,
+"CD","DR Congo",,,50.22,
+"TH","Thailand",,27.3,79.33,29
+"TZ","Tanzania",,,53.48,
+"MM","Myanmar",,6.1,59.16,67
+"SD","Sudan",,,52.66,
+"UG","Uganda",,,54.73,
+"DZ","Algeria",,5.3,73.66,
+"IQ","Iraq",,,63.25,78
+"AF","Afghanistan",,,49.47,
+"YE","Yemen",,,47.77,
+"AO","Angola",,,58.05,
+"UZ","Uzbekistan",,,70.94,76
+"MZ","Mozambique",,,49.39,
+"GH","Ghana",,6.1,59.02,
+"MG","Madagascar",,,50.87,
+"CI","Ivory Coast",,,53.78,
+"CM","Cameroon",,3.6,57.58,
+"NP","Nepal",,,58.47,
+"NE","Niger",,,46.15,
+"KP","North Korea",,,49.08,
+"SY","Syria",,,56.2,
+"ML","Mali",,,47.55,
+"BF","Burkina Faso",,,47.84,
+"MW","Malawi",,,52.54,
+"ZM","Zambia",,,56.56,
+"SO","Somalia",,,45.09,
+"SN","Senegal",,,52.83,
+"GT","Guatemala",,4,61.79,64
+"KH","Cambodia",,9.5,58.43,49
+"ZW","Zimbabwe",,4.4,54.72,
+"GN","Guinea",,,50.17,
+"BJ","Benin",,,52.37,
+"RW","Rwanda",,,54.59,
+"BI","Burundi",,,47.62,
+"BO","Bolivia",,,65.72,
+"SS","South Sudan",,,45.16,
+"HT","Haiti",,,55.09,
+"DO","Dominican Republic",,11.2,75.93,53
+"HN","Honduras",,4,61.09,
+"CU","Cuba",,,75.16,
+"TJ","Tajikistan",,,63.4,
+"PG","Papua New Guinea",,,56.49,
+"TG","Togo",,,54.46,
+"SL","Sierra Leone",,,48.14,
+"LA","Laos",,,60.95,
+"TM","Turkmenistan",,,73.54,
+"LY","Libya",,,73.81,
+"KG","Kyrgyzstan",,,68.2,
+"PY","Paraguay",,,71.45,
+"NI","Nicaragua",,,62.99,
+"CG","Republic of the Congo",,,49.36,
+"SV","El Salvador",,2.9,63.27,75
+"LR","Liberia",,,50.67,
+"PS","Palestine",,,69.27,
+"CF","Central African Republic",,,45.48,
+"MR","Mauritania",,,54.3,
+"ER","Eritrea",,,51.97,
+"MN","Mongolia",,,73.04,
+"NA","Namibia",,,60.54,
+"MD","Moldova",,,75.08,
+"JM","Jamaica",,,68.36,
+"GM","Gambia",,,52.27,
+"GA","Gabon",,,64.84,
+"BW","Botswana",,,68.53,
+"LS","Lesotho",,,52.89,
+"GW","Guinea-Bissau",,,50.63,
+"GQ","Equatorial Guinea",,,62.61,
+"BH","Bahrain",,12.4,89.21,
+"TT","Trinidad and Tobago",,,80.45,
+"TL","Timor-Leste",,,56.47,
+"MU","Mauritius",,,78.02,
+"SZ","Eswatini",,,59.26,
+"DJ","Djibouti",,,52.64,
+"FJ","Fiji",,,71.27,
+"KM","Comoros",,,56.74,
+"SB","Solomon Islands",,,56.23,
+"GY","Guyana",,,73.28,
+"BT","Bhutan",,,64.79,
+"MO","Macau",,,91.49,
+"SR","Suriname",,,64.81,
+"ME","Montenegro",,,84.23,
+"BN","Brunei",,,82.08,
+"BZ","Belize",,,67.87,
+"BS","Bahamas",,,81.24,
+"VU","Vanuatu",,,60.84,
+"BB","Barbados",,,80.27,
+"ST","Sao Tome and Principe",,,60.62,
+"WS","Samoa",,,68.29,
+"LC","Saint Lucia",,,70.19,
+"KI","Kiribati",,,61.26,
+"SC","Seychelles",,,79.29,
+"FM","Micronesia",,,62.43,
+"TO","Tonga",,,72.45,
+"VC","Saint Vincent and the Grenadines",,,76.12,
+"AD","Andorra",,,88.62,
+"DM","Dominica",,,72.91,
+"KN","Saint Kitts and Nevis",,,83.83,
+"LI","Liechtenstein",,,93.84,
+"MC","Monaco",,,94.16,
+"MH","Marshall Islands",,,71.33,
+"SM","San Marino",,,86.89,
+"PW","Palau",,,78.14,
+"NR","Nauru",,,64.93,
+"TV","Tuvalu",,,62.73,
