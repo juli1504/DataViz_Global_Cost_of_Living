@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Economic Pulse - Real Data</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+  <h1>
+    <i class="fa-solid fa-bolt"></i>
+    Economic Pulse (Données Réelles)
+  </h1>
+  <p class="subtitle">
+    Visualisation interactive des flux économiques mondiaux
+  </p>
+</header>
+
+<div id="loading">
+  <i class="fa-solid fa-spinner fa-spin"></i>
+  Chargement des données CSV...
+</div>
+
+<div class="container" id="dashboard" style="display:none;">
+
+  <div class="controls">
+    <div class="control-group">
+      <label>
+        <i class="fa-solid fa-globe"></i> Pays
+      </label>
+      <select id="country-select"></select>
+    </div>
+
+    <div class="control-group">
+      <label>
+        <i class="fa-solid fa-calendar"></i> Année
+      </label>
+      <input type="range" id="year-slider" min="1970" max="2021" value="2021">
+    </div>
+
+    <div class="control-group">
+      <label>&nbsp;</label>
+      <div class="year-display" id="year-display">2021</div>
+    </div>
+  </div>
+
+  <div class="main-viz">
+    <div class="pulse-container">
+      <svg id="pulse-svg"></svg>
+    </div>
+
+    <div class="info-panel">
+      <div class="country-header">
+        <div class="country-name" id="display-country">-</div>
+        <div class="country-currency" id="display-currency">-</div>
+      </div>
+
+      <div class="stat-card gdp">
+        <div class="stat-label">PIB (GDP)</div>
+        <div class="stat-value gdp" id="stat-gdp">-</div>
+      </div>
+
+      <div class="stat-card gni">
+        <div class="stat-label">Revenu National Brut (GNI)</div>
+        <div class="stat-value gni" id="stat-gni">-</div>
+      </div>
+
+      <div class="stat-card pop">
+        <div class="stat-label">Population</div>
+        <div class="stat-value pop" id="stat-pop">-</div>
+      </div>
+
+      <div class="stat-card exchange">
+        <div class="stat-label">Taux de Change (IMF)</div>
+        <div class="stat-value exchange" id="stat-exchange">-</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sectors-grid">
+    <div class="sector-chart">
+      <div class="sector-title">
+        <div class="sector-icon" style="background: rgba(77,208,225,0.2);">
+          <i class="fa-solid fa-chart-line"></i>
+        </div>
+        Évolution Temporelle
+      </div>
+      <svg id="timeline-chart"></svg>
+    </div>
+
+    <div class="sector-chart">
+      <div class="sector-title">
+        <div class="sector-icon" style="background: rgba(206,147,216,0.2);">
+          <i class="fa-solid fa-industry"></i>
+        </div>
+        Répartition Sectorielle
+      </div>
+      <svg id="sectors-chart"></svg>
+      <div class="legend" id="sectors-legend"></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
