@@ -12,7 +12,8 @@ const App = () => {
   const [showCrises, setShowCrises] = useState(true);
   const [showProjection, setShowProjection] = useState(true);
   
-  
+  const [legendData, setLegendData] = useState(null);
+
   const [isMapOpen, setIsMapOpen] = useState(false);
 
   useEffect(() => {
@@ -39,6 +40,63 @@ const App = () => {
       if(viewMode === 'trade') return datasets.length === 1 ? "Evolution des Importations (Orange) et Exportations (Vert). L'écart représente la balance commerciale." : "Comparaison du Solde Commercial (Export - Import). Au dessus de 0 = Excédent.";
       if(viewMode === 'population') return "Analyse Démographique : Comparez la courbe de population avec celle du PIB (Double Axe si 1 pays).";
       return "Analyse Macroéconomique : Survolez le graphique pour voir les valeurs exactes.";
+  };
+
+  // Fonction pour obtenir les données de légende en fonction du mode
+  const getLegendItems = () => {
+    const colors = ["#3b82f6", "#ef4444", "#10b981", "#eab308", "#a855f7"];
+    
+    if (viewMode === 'trade') {
+      if (datasets.length === 1) {
+        return [
+          { label: "Exportations", color: "#22c55e" },
+          { label: "Importations", color: "#f97316" },
+        ];
+      } else {
+        return datasets.map((ds, i) => ({
+          label: ds.country,
+          color: colors[i % colors.length]
+        }));
+      }
+    }
+    
+    if (viewMode === 'sectors' && datasets.length === 1) {
+      const keys = ["agriculture", "manufacturing", "construction", "trade", "transport", "other"];
+      const labels = { 
+        agriculture: "Agriculture", 
+        manufacturing: "Industrie", 
+        construction: "Construction", 
+        trade: "Commerce", 
+        transport: "Transport", 
+        other: "Services" 
+      };
+      const colorScale = {
+        agriculture: "#22c55e",
+        manufacturing: "#3b82f6",
+        construction: "#eab308",
+        trade: "#f97316",
+        transport: "#a855f7",
+        other: "#64748b"
+      };
+      
+      return keys.map(k => ({
+        label: labels[k],
+        color: colorScale[k]
+      }));
+    }
+    
+    if (viewMode === 'population' && datasets.length === 1) {
+      return [
+        { label: "PIB", color: "#3b82f6" },
+        { label: "Population", color: "#ef4444" }
+      ];
+    }
+    
+    // Modes growth, wellbeing, population (multi-pays)
+    return datasets.map((ds, i) => ({
+      label: ds.country,
+      color: colors[i % colors.length]
+    }));
   };
 
   return (
@@ -99,10 +157,63 @@ const App = () => {
 
               <div className="flex-1 bg-slate-900/50 border border-slate-800 rounded-2xl p-4 shadow-inner relative">
                   {datasets.length > 0 ? (
-                      <UniversalChart datasets={datasets} viewMode={viewMode} showCrises={showCrises} showProjection={showProjection} />
+                      <UniversalChart datasets={datasets} viewMode={viewMode} showCrises={showCrises} showProjection={showProjection} onLegendUpdate={setLegendData} />
                   ) : <div className="h-full flex items-center justify-center text-slate-500">Aucun pays sélectionné</div>}
               </div>
           </main>
+          
+          {/* --- LEGEND FIXE --- */}
+          <div className="absolute top-23 right-6 bg-slate-900/95 border border-slate-700 rounded-lg p-4 shadow-xl backdrop-blur-sm min-w-[200px] max-w-[280px]">
+            <div className="font-bold text-white text-sm border-b border-slate-700 mb-3 pb-2">
+              📊 Légende
+            </div>
+            
+            <div className="space-y-2">
+              {getLegendItems().map((item, idx) => (
+                <div 
+                  key={idx} 
+                  className="flex items-center gap-2 text-xs"
+                >
+                  <span 
+                    className="w-3 h-3 rounded-full flex-shrink-0" 
+                    style={{background: item.color}}
+                  ></span>
+                  <span className="text-slate-300 truncate">
+                    {item.label}
+                  </span>
+                </div>
+              ))}
+            </div>
+            
+            {/* Afficher les données dynamiques au survol */}
+            {legendData && (
+              <div className="mt-3 pt-3 border-t border-slate-700">
+                <div className="text-xs text-slate-400 mb-2">
+                  {legendData.title}
+                </div>
+                <div className="space-y-1">
+                  {legendData.items.map((item, idx) => (
+                    <div 
+                      key={idx} 
+                      className="flex justify-between items-center text-xs"
+                    >
+                      <div className="flex items-center gap-2">
+                        {item.color && (
+                          <span 
+                            className="w-2 h-2 rounded-full" 
+                            style={{background: item.color}}
+                          ></span>
+                        )}
+                        <span className="text-slate-300">
+                          {item.label}
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
 
           {/* --- MINIMAP (BOTTOM RIGHT) --- */}
           <div 

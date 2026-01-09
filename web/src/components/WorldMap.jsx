@@ -14,8 +14,8 @@ const WorldMap = ({ data, selectedCountries, onCountryClick, isMini = false }) =
   useEffect(() => {
     if (!geoData) return;
 
-    const width = isMini ? 300 : window.innerWidth * 0.8;
-    const height = isMini ? 180 : window.innerHeight * 0.8;
+    const width = isMini ? 250 : window.innerWidth * 0.8;
+    const height = isMini ? 130 : window.innerHeight * 0.8;
 
     const svgEl = d3.select(svgRef.current);
     svgEl.selectAll("*").remove();

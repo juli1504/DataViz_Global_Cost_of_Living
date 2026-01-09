@@ -23,7 +23,7 @@ const UniversalChart = ({
     const wrapper = wrapperRef.current;
     const { width, height } = wrapper.getBoundingClientRect();
     const margin = { top: 30, right: 60, bottom: 40, left: 60 };
-    const chartWidth = width - margin.left - margin.right;
+    const chartWidth = width - margin.left - margin.right - 190;
     const chartHeight = height - margin.top - margin.bottom;
 
     const svgEl = d3.select(svgRef.current);
