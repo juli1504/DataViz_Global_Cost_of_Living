@@ -17,6 +17,12 @@ const App = () => {
   const [isMapOpen, setIsMapOpen] = useState(false);
 
   useEffect(() => {
+    if (viewMode === 'sectors' && selectedCountries.length > 1) {
+      setSelectedCountries([selectedCountries[0]]);
+    }
+  }, [viewMode]);
+
+  useEffect(() => {
     d3.csv('economy.csv').then(raw => {
       const processed = processData(raw);
       setData(processed);
@@ -25,6 +31,13 @@ const App = () => {
   }, []);
 
   const toggleCountry = (c) => {
+    if (viewMode === 'sectors') {
+        if (selectedCountries.includes(c) && selectedCountries.length === 1) {
+            return; // Ne pas permettre de désélectionner le seul pays en mode secteurs
+        }
+        setSelectedCountries([c]);
+        return;
+    }
     if (selectedCountries.includes(c)) {
       if (selectedCountries.length > 1) setSelectedCountries(selectedCountries.filter(x => x !== c));
     } else {
@@ -221,7 +234,7 @@ const App = () => {
              onClick={() => setIsMapOpen(true)}
              title="Ouvrir la carte du monde"
           >
-              <div className="absolute top-2 left-2 text-[10px] font-bold bg-slate-900/80 px-1 rounded pointer-events-none">🌍 SÉLECTION CARTE</div>
+              {/* <div className="absolute top-2 left-2 text-[10px] font-bold bg-slate-900/80 px-1 rounded pointer-events-none">🌍 SÉLECTION CARTE</div> */}
               <WorldMap isMini={true} selectedCountries={selectedCountries} />
           </div>
 
