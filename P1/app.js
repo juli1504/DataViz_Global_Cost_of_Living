@@ -231,27 +231,237 @@ function drawPulse(data) {
   centerG.append('text').attr('class', 'center-value').attr('y', -8).text('PIB');
   centerG.append('text').attr('class', 'center-value').attr('y', 12).attr('font-size', '12px').text(formatNumber(data.gdp));
 
-  // Imports / Exports
-  const arrowG = svg.append('g');
-  const expAngle = Math.PI / 4;
-  const impAngle = 3 * Math.PI / 4;
-  const tradeR = maxR + 40;
-  
-  const exportsVal = data.exports || 0;
-  const importsVal = data.imports || 0;
+  // SECTION IMPORTS/EXPORTS - Boîte en bas à droite
+  drawTradeBox(data, svg, w, h);
+}
 
-  [[exportsVal, expAngle, '#81c784', 'Exports'], [importsVal, impAngle, '#ff8a65', 'Imports']].forEach(([val, angle, color, label]) => {
-    const x = cx + Math.cos(angle) * tradeR;
-    const y = cy + Math.sin(angle) * tradeR;
-    
-    if(val > 0) {
-        arrowG.append('line').attr('x1', cx + Math.cos(angle) * (gdpR + 10)).attr('y1', cy + Math.sin(angle) * (gdpR + 10))
-          .attr('x2', x).attr('y2', y).attr('stroke', color).attr('stroke-width', 3).attr('stroke-dasharray', '5,5').attr('opacity', 0.6);
-        arrowG.append('circle').attr('cx', x).attr('cy', y).attr('r', 25).attr('fill', color).attr('opacity', 0.8);
-        arrowG.append('text').attr('x', x).attr('y', y - 5).attr('text-anchor', 'middle').attr('fill', '#fff').attr('font-size', '10px').text(label);
-        arrowG.append('text').attr('x', x).attr('y', y + 10).attr('text-anchor', 'middle').attr('fill', '#fff').attr('font-size', '9px').text(formatNumber(val));
-    }
-  });
+// --- BOÎTE IMPORTS/EXPORTS ---
+function drawTradeBox(data, svg, svgWidth, svgHeight) {
+  const boxWidth = 280;
+  const boxHeight = 180;
+  const boxX = svgWidth - boxWidth - 20;
+  const boxY = svgHeight - boxHeight - 20;
+  
+  const exports = data.exports || 0;
+  const imports = data.imports || 0;
+  const balance = exports - imports;
+  const total = exports + imports;
+  
+  // Groupe de la boîte
+  const tradeBox = svg.append('g')
+    .attr('class', 'trade-box')
+    .attr('transform', `translate(${boxX},${boxY})`);
+  
+  // Fond avec effet glassmorphism
+  tradeBox.append('rect')
+    .attr('width', boxWidth)
+    .attr('height', boxHeight)
+    .attr('rx', 12)
+    .attr('fill', 'rgba(26, 26, 58, 0.85)')
+    .attr('stroke', 'rgba(77, 208, 225, 0.3)')
+    .attr('stroke-width', 2);
+  
+  // Titre
+  tradeBox.append('text')
+    .attr('x', boxWidth / 2)
+    .attr('y', 25)
+    .attr('text-anchor', 'middle')
+    .attr('fill', '#4dd0e1')
+    .attr('font-size', '14px')
+    .attr('font-weight', 'bold')
+    .text('Commerce International');
+  
+  // Si pas de données
+  if (total === 0) {
+    tradeBox.append('text')
+      .attr('x', boxWidth / 2)
+      .attr('y', boxHeight / 2)
+      .attr('text-anchor', 'middle')
+      .attr('fill', '#888')
+      .attr('font-size', '12px')
+      .text('Données non disponibles');
+    return;
+  }
+  
+  // Calcul des pourcentages
+  const exportPercent = (exports / total) * 100;
+  const importPercent = (imports / total) * 100;
+  
+  // Barre de ratio
+  const barY = 50;
+  const barHeight = 30;
+  const barMargin = 15;
+  
+  // Fond de la barre
+  tradeBox.append('rect')
+    .attr('x', barMargin)
+    .attr('y', barY)
+    .attr('width', boxWidth - 2 * barMargin)
+    .attr('height', barHeight)
+    .attr('rx', 5)
+    .attr('fill', 'rgba(0,0,0,0.3)');
+  
+  // Barre exports (vert)
+  const exportWidth = ((boxWidth - 2 * barMargin) * exportPercent) / 100;
+  tradeBox.append('rect')
+    .attr('x', barMargin)
+    .attr('y', barY)
+    .attr('width', 0)
+    .attr('height', barHeight)
+    .attr('rx', 5)
+    .attr('fill', '#81c784')
+    .transition()
+    .duration(1000)
+    .attr('width', exportWidth);
+  
+  // Barre imports (orange)
+  const importWidth = ((boxWidth - 2 * barMargin) * importPercent) / 100;
+  tradeBox.append('rect')
+    .attr('x', barMargin + exportWidth)
+    .attr('y', barY)
+    .attr('width', 0)
+    .attr('height', barHeight)
+    .attr('rx', 5)
+    .attr('fill', '#ff8a65')
+    .transition()
+    .duration(1000)
+    .delay(200)
+    .attr('width', importWidth);
+  
+  // Ligne de séparation
+  if (exportPercent > 5 && importPercent > 5) {
+    tradeBox.append('line')
+      .attr('x1', barMargin + exportWidth)
+      .attr('x2', barMargin + exportWidth)
+      .attr('y1', barY)
+      .attr('y2', barY + barHeight)
+      .attr('stroke', '#fff')
+      .attr('stroke-width', 2)
+      .attr('opacity', 0.5);
+  }
+  
+  // Valeurs détaillées
+  const detailsY = 95;
+  const lineSpacing = 22;
+  
+  // Exports
+  const exportG = tradeBox.append('g');
+  exportG.append('circle')
+    .attr('cx', 25)
+    .attr('cy', detailsY)
+    .attr('r', 6)
+    .attr('fill', '#81c784');
+  exportG.append('text')
+    .attr('x', 38)
+    .attr('y', detailsY + 4)
+    .attr('fill', '#ccc')
+    .attr('font-size', '12px')
+    .text('Exports');
+  exportG.append('text')
+    .attr('x', boxWidth - 15)
+    .attr('y', detailsY + 4)
+    .attr('text-anchor', 'end')
+    .attr('fill', '#81c784')
+    .attr('font-size', '13px')
+    .attr('font-weight', 'bold')
+    .text(formatNumber(exports));
+  exportG.append('text')
+    .attr('x', boxWidth - 15)
+    .attr('y', detailsY + 16)
+    .attr('text-anchor', 'end')
+    .attr('fill', '#81c784')
+    .attr('font-size', '10px')
+    .attr('opacity', 0.7)
+    .text(`${exportPercent.toFixed(1)}%`);
+  
+  // Imports
+  const importG = tradeBox.append('g');
+  importG.append('circle')
+    .attr('cx', 25)
+    .attr('cy', detailsY + lineSpacing)
+    .attr('r', 6)
+    .attr('fill', '#ff8a65');
+  importG.append('text')
+    .attr('x', 38)
+    .attr('y', detailsY + lineSpacing + 4)
+    .attr('fill', '#ccc')
+    .attr('font-size', '12px')
+    .text('Imports');
+  importG.append('text')
+    .attr('x', boxWidth - 15)
+    .attr('y', detailsY + lineSpacing + 4)
+    .attr('text-anchor', 'end')
+    .attr('fill', '#ff8a65')
+    .attr('font-size', '13px')
+    .attr('font-weight', 'bold')
+    .text(formatNumber(imports));
+  importG.append('text')
+    .attr('x', boxWidth - 15)
+    .attr('y', detailsY + lineSpacing + 16)
+    .attr('text-anchor', 'end')
+    .attr('fill', '#ff8a65')
+    .attr('font-size', '10px')
+    .attr('opacity', 0.7)
+    .text(`${importPercent.toFixed(1)}%`);
+  
+  // Ligne de séparation
+  tradeBox.append('line')
+    .attr('x1', barMargin)
+    .attr('x2', boxWidth - barMargin)
+    .attr('y1', detailsY + lineSpacing * 2 - 5)
+    .attr('y2', detailsY + lineSpacing * 2 - 5)
+    .attr('stroke', 'rgba(255,255,255,0.1)')
+    .attr('stroke-width', 1);
+  
+  // Balance commerciale
+  const balanceY = detailsY + lineSpacing * 2 + 15;
+  const balanceColor = balance >= 0 ? '#81c784' : '#ef5350';
+  const balanceLabel = balance >= 0 ? 'Excédent' : 'Déficit';
+  
+  tradeBox.append('text')
+    .attr('x', barMargin)
+    .attr('y', balanceY)
+    .attr('fill', '#aaa')
+    .attr('font-size', '11px')
+    .text('Balance Commerciale');
+  
+  const balanceG = tradeBox.append('g');
+  balanceG.append('text')
+    .attr('x', boxWidth - 15)
+    .attr('y', balanceY)
+    .attr('text-anchor', 'end')
+    .attr('fill', balanceColor)
+    .attr('font-size', '14px')
+    .attr('font-weight', 'bold')
+    .text(formatNumber(Math.abs(balance)));
+  
+  balanceG.append('text')
+    .attr('x', boxWidth - 15)
+    .attr('y', balanceY + 14)
+    .attr('text-anchor', 'end')
+    .attr('fill', balanceColor)
+    .attr('font-size', '10px')
+    .attr('opacity', 0.8)
+    .text(balanceLabel);
+  
+  // Icône indicateur
+  const iconX = barMargin * 10.5;
+  const iconY = balanceY - 8;
+  if (balance >= 0) {
+    // Flèche vers le haut
+    tradeBox.append('path')
+      .attr('d', `M${iconX},${iconY + 5} L${iconX + 5},${iconY} L${iconX + 10},${iconY + 5}`)
+      .attr('fill', 'none')
+      .attr('stroke', balanceColor)
+      .attr('stroke-width', 2);
+  } else {
+    // Flèche vers le bas
+    tradeBox.append('path')
+      .attr('d', `M${iconX},${iconY} L${iconX + 5},${iconY + 5} L${iconX + 10},${iconY}`)
+      .attr('fill', 'none')
+      .attr('stroke', balanceColor)
+      .attr('stroke-width', 2);
+  }
 }
 
 // --- DESSIN : TIMELINE ---
