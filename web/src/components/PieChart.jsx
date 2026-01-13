@@ -16,7 +16,7 @@ const PieChart = ({ data, year }) => {
     const { width, height } = container.getBoundingClientRect();
     if (width === 0 || height === 0) return;
 
-    const margin = 40;
+    const margin = 50;
     const radius = Math.min(width, height) / 2 - margin;
     
     const cx = width / 2;
