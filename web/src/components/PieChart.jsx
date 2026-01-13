@@ -8,17 +8,34 @@ const PieChart = ({ data, year }) => {
   const containerRef = useRef();
   const [tooltip, setTooltip] = useState(null);
   const [tooltipPos, setTooltipPos] = useState(null);
+  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+
+    const resizeObserver = new ResizeObserver((entries) => {
+      if (!entries || entries.length === 0) return;
+      const { width, height } = entries[0].contentRect;
+      setDimensions({ width, height });
+    });
+
+    resizeObserver.observe(containerRef.current);
+
+    return () => resizeObserver.disconnect();
+  }, []);
 
   useEffect(() => {
     if (!data || data.length === 0 || !containerRef.current) return;
 
-    const container = containerRef.current;
-    const { width, height } = container.getBoundingClientRect();
+    const { width, height } = dimensions;
     if (width === 0 || height === 0) return;
 
-    const margin = 50;
+    const margin = 20;
+    
     const radius = Math.min(width, height) / 2 - margin;
     
+    if (radius <= 0) return;
+
     const cx = width / 2;
     const cy = height / 2;
 
@@ -63,7 +80,7 @@ const PieChart = ({ data, year }) => {
         setTooltip({
           title: d.data.label,
           items: [
-            { icon: d.data.icon, label: 'Valeur', value: formatCurrency(d.data.value) },
+            { icon: d.data.icon, label: 'Valeur', value: formatCurrency(d.data.value), color: d.data.color },
             { label: 'Part', value: `${((d.data.value / total) * 100).toFixed(1)}%` }
           ]
         });
@@ -79,20 +96,22 @@ const PieChart = ({ data, year }) => {
       .attr('y', -8)
       .attr('fill', '#94a3b8')
       .attr('font-size', '10px')
+      .attr('font-weight', '600')
       .text('TOTAL');
 
     g.append('text')
       .attr('text-anchor', 'middle')
       .attr('y', 14)
       .attr('fill', 'white')
-      .attr('font-size', '13px')
+      .attr('font-size', '12px')
       .attr('font-weight', 'bold')
       .text(formatCurrency(total));
 
-  }, [data, year]);
+  }, [data, year, dimensions]);
 
   return (
     <div className="w-full h-full flex flex-col overflow-hidden">
+
       <div ref={containerRef} className="flex-1 w-full min-h-0 relative">
         <svg ref={svgRef} className="w-full h-full block" />
         <Tooltip data={tooltip} position={tooltipPos} />
@@ -101,7 +120,7 @@ const PieChart = ({ data, year }) => {
       <div className="flex-none flex flex-wrap justify-center gap-x-4 gap-y-2 py-2 px-2 border-t border-white/5 bg-slate-900/20">
         {sectorKeys.map(key => (
           <div key={key} className="flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-full" style={{ backgroundColor: sectorConfig[key].color }} />
+            <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: sectorConfig[key].color }} />
             <span className="text-[10px] text-slate-400 font-medium whitespace-nowrap">{sectorConfig[key].label}</span>
           </div>
         ))}
