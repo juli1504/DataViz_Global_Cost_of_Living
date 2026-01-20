@@ -7,9 +7,8 @@ import EconomicPulse from '../components/EconomicPulse';
 import PieChart from '../components/PieChart';
 import { formatCurrency, formatNumber, countryColors } from '../utils/dataProcessing';
 
-const DashboardPage = ({ data, countries }) => {
+const DashboardPage = ({ data, countries, selectedCountries, setSelectedCountries }) => {
   const [activeTab, setActiveTab] = useState('pulse');
-  const [selectedCountries, setSelectedCountries] = useState(['France']);
   const [currentYear, setCurrentYear] = useState(2020);
   const [compareMetric, setCompareMetric] = useState('gdp');
   const [showCrises, setShowCrises] = useState(true);

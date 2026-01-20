@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'; // Ensure useState is imported
 import * as d3 from 'd3';
 import { processData } from './utils/dataProcessing';
 import Navigation from './components/Navigation';
@@ -12,6 +12,11 @@ function App() {
   const [currentPage, setCurrentPage] = useState('home');
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  // Keeps selection alive even if switching pages
+  const [selectedCountries, setSelectedCountries] = useState([
+    'France', 'United States', 'China', 'Germany', 'Brazil'
+  ]);
 
   // Chargement des données
   useEffect(() => {
@@ -92,6 +97,10 @@ function App() {
         <DashboardPage 
           data={data} 
           countries={countries}
+          // --- NEW STEP 2: Pass the state down to the Dashboard ---
+          selectedCountries={selectedCountries}
+          setSelectedCountries={setSelectedCountries}
+          // --------------------------------------------------------
         />
       )}
       
