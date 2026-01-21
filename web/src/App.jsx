@@ -14,9 +14,27 @@ function App() {
   const [error, setError] = useState(null);
 
   // This defines the variables you are trying to pass down below
-  const [selectedCountries, setSelectedCountries] = useState([
-    'France', 'United States', 'China', 'Germany', 'Brazil'
-  ]);
+  const [selectedCountries, setSelectedCountries] = useState(() => {
+    try {
+      const raw = localStorage.getItem('selectedCountries');
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed.slice(0,5);
+      }
+    } catch (e) {
+      // ignore and fall back to default
+    }
+    return ['France'];
+  });
+
+  // Persist selected countries to localStorage
+  useEffect(() => {
+    try {
+      localStorage.setItem('selectedCountries', JSON.stringify(selectedCountries));
+    } catch (e) {
+      // ignore
+    }
+  }, [selectedCountries]);
 
   // Chargement des données
   useEffect(() => {

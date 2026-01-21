@@ -37,9 +37,19 @@ const DashboardPage = ({ data, countries, selectedCountries, setSelectedCountrie
 
   const toggleCountry = (country) => {
     setSelectedCountries(prev => {
-      if (activeTab === 'pulse') return [country]; 
+      // Toggle country in selection (add/remove). Primary is handled separately via setPrimary.
       if (prev.includes(country)) return prev.length > 1 ? prev.filter(c => c !== country) : prev;
       return prev.length < 5 ? [...prev, country] : prev;
+    });
+  };
+
+  // Promote a country to be the primary (index 0) without removing targets
+  const setPrimary = (country) => {
+    setSelectedCountries(prev => {
+      if (!country) return prev;
+      if (prev[0] === country) return prev;
+      const others = prev.filter(c => c !== country);
+      return [country, ...others].slice(0, 5);
     });
   };
 
@@ -51,10 +61,8 @@ const DashboardPage = ({ data, countries, selectedCountries, setSelectedCountrie
   };
 
   const handleTabChange = (tab) => {
+    // Just change the active tab; keep the current selections intact
     setActiveTab(tab);
-    if (tab === 'pulse' && selectedCountries.length > 1) {
-      setSelectedCountries([selectedCountries[0]]);
-    }
   };
 
   const showSlider = activeTab === 'pulse' || (activeTab === 'compare' && compareMetric === 'sectors');
@@ -104,37 +112,53 @@ const DashboardPage = ({ data, countries, selectedCountries, setSelectedCountrie
 
         {/* --- LISTE DER AUSGEWÄHLTEN LÄNDER --- */}
         <div className="h-40 flex-none flex flex-col border-b border-white/5 pb-4 mb-4">
-            
+
             <div className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2 flex justify-between items-center">
-              <span>{activeTab === 'pulse' ? 'PAYS CIBLE' : 'SÉLECTION ACTUELLE'}</span>
-              
-              {/* BUTTON LOGIC - FINAL VERSION */}
+              <span>SELECTION</span>
               {selectedCountries.length > 1 ? (
                 <button 
                   onClick={resetComparisons}
                   className="text-[10px] font-bold bg-red-500/10 text-red-400 border border-red-500/20 px-2 py-0.5 rounded hover:bg-red-500/20 hover:text-white transition-colors animate-enter"
                 >
-                  EFFACER TOUT
+                  EFFACER LES CIBLES
                 </button>
               ) : (
                 <span className="bg-slate-800 px-2 py-0.5 rounded text-cyan-500">{selectedCountries.length}</span>
               )}
             </div>
 
-            <div className="flex-1 overflow-y-auto custom-scrollbar pr-1 space-y-2">
-               {selectedCountries.map((country, idx) => (
-                  <div key={country} className="flex items-center justify-between bg-slate-800/80 border border-slate-600 rounded-lg pl-3 pr-2 py-2 group hover:border-red-500/50 transition-colors">
-                     <div className="flex items-center gap-2 overflow-hidden">
-                        <div className="w-2 h-2 rounded-full flex-shrink-0" style={{backgroundColor: countryColors[idx % countryColors.length]}}></div>
-                        <span className="text-xs font-medium text-slate-200 truncate" title={country}>
-                          {country} {idx === 0 && <span className="text-[9px] text-slate-500 ml-1">(Principal)</span>}
-                        </span>
-                     </div>
-                     {(selectedCountries.length > 1 || activeTab === 'compare') && (
-                       <button onClick={() => toggleCountry(country)} className="ml-2 w-5 h-5 flex items-center justify-center rounded hover:bg-red-500/20 text-slate-500 hover:text-red-400 transition-colors">×</button>
-                     )}
-                  </div>
-               ))}
+            <div className="flex-1 overflow-y-auto custom-scrollbar pr-1 space-y-3">
+              {/* Primary */}
+              <div>
+                <div className="text-[10px] text-slate-400 uppercase mb-1">Pays principal</div>
+                <div className="bg-slate-800/80 border border-slate-600 rounded-lg pl-3 pr-2 py-2 flex items-center gap-3">
+                  <div className="w-2 h-2 rounded-full" style={{backgroundColor: countryColors[0]}}></div>
+                  <div className="text-xs font-medium text-slate-200 truncate">{selectedCountries[0] || 'France'}</div>
+                  <div className="ml-auto text-[9px] text-slate-500">Principal</div>
+                </div>
+              </div>
+
+              {/* Targets */}
+              <div>
+                <div className="text-[10px] text-slate-400 uppercase mb-1">Pays cibles <span className="text-[10px] text-slate-500 ml-2">({Math.max(0, selectedCountries.length - 1)}/4)</span></div>
+                <div className="space-y-2">
+                  {selectedCountries.slice(1,5).map((country, idx) => (
+                    <div key={country} className="flex items-center justify-between bg-slate-800/80 border border-slate-600 rounded-lg pl-3 pr-2 py-2 group hover:border-red-500/50 transition-colors">
+                      <div className="flex items-center gap-2 overflow-hidden">
+                        <div className="w-2 h-2 rounded-full flex-shrink-0" style={{backgroundColor: countryColors[(idx+1) % countryColors.length]}}></div>
+                        <span className="text-xs font-medium text-slate-200 truncate" title={country}>{country}</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <button onClick={() => setPrimary(country)} title="Définir comme principal" className="text-[10px] px-2 py-0.5 rounded bg-slate-800/60 hover:bg-slate-700 text-slate-300">Définir</button>
+                        <button onClick={() => toggleCountry(country)} className="ml-2 w-5 h-5 flex items-center justify-center rounded hover:bg-red-500/20 text-slate-500 hover:text-red-400 transition-colors">×</button>
+                      </div>
+                    </div>
+                  ))}
+                  {selectedCountries.length <= 1 && (
+                    <div className="text-xs text-slate-500 italic">Aucun pays cible sélectionné</div>
+                  )}
+                </div>
+              </div>
             </div>
         </div>
 

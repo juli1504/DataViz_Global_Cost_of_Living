@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { countryColors } from '../utils/dataProcessing';
 import WorldMap from './WorldMap';
@@ -19,11 +19,37 @@ const CountrySelector = ({
     );
   }, [countries, search]);
 
+  // Ensure there is always a primary country by default (France)
+  useEffect(() => {
+    if (setSelectedCountries && (!selectedCountries || selectedCountries.length === 0)) {
+      setSelectedCountries(['France']);
+    }
+    // run only on mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   // ✅ NEUE LOGIK: Behalte das erste Land, lösche den Rest
   const handleReset = () => {
     if (setSelectedCountries && selectedCountries.length > 0) {
       // Wir setzen die Liste auf ein Array, das nur das allererste Element enthält
       setSelectedCountries([selectedCountries[0]]);
+    }
+  };
+
+  // Handle clicks with rules:
+  // - primary (index 0) is fixed and cannot be removed
+  // - allow up to 4 additional targets (total max 5)
+  const handleCountryClick = (country) => {
+    const primary = selectedCountries && selectedCountries[0];
+    if (country === primary) return; // do nothing on primary click
+
+    const isSelected = selectedCountries.includes(country);
+    const canAdd = selectedCountries.length < 5;
+
+    if (isSelected) {
+      onToggle(country); // remove target
+    } else if (canAdd) {
+      onToggle(country); // add target
     }
   };
 
@@ -89,7 +115,7 @@ const CountrySelector = ({
                 return (
                   <button
                     key={country}
-                    onClick={() => onToggle(country)}
+                    onClick={() => handleCountryClick(country)}
                     disabled={!isSelected && !canAdd}
                     className={`
                       px-2 py-2 rounded-lg text-xs text-left truncate transition-all border flex items-center gap-2
@@ -140,7 +166,7 @@ const CountrySelector = ({
                 <div key={c} className="flex items-center gap-2 bg-slate-800 px-3 py-1 rounded-full border border-slate-700">
                    <div className="w-2 h-2 rounded-full" style={{backgroundColor: countryColors[i % countryColors.length]}}></div>
                    <span className="text-white text-xs">{c}</span>
-                   <button onClick={() => onToggle(c)} className="hover:text-red-400 ml-1">×</button>
+                   {i !== 0 && <button onClick={() => onToggle(c)} className="hover:text-red-400 ml-1">×</button>}
                 </div>
               ))}
             </div>
