@@ -43,6 +43,13 @@ const DashboardPage = ({ data, countries, selectedCountries, setSelectedCountrie
     });
   };
 
+  // --- DELETE FUNCTION ---
+  const resetComparisons = () => {
+    if (selectedCountries.length > 0) {
+      setSelectedCountries([selectedCountries[0]]);
+    }
+  };
+
   const handleTabChange = (tab) => {
     setActiveTab(tab);
     if (tab === 'pulse' && selectedCountries.length > 1) {
@@ -55,6 +62,7 @@ const DashboardPage = ({ data, countries, selectedCountries, setSelectedCountrie
   return (
     <div className="h-screen w-full bg-[#0B0F19] text-white flex pt-16 overflow-hidden font-sans">
       
+      {/* --- SIDEBAR --- */}
       <div className="w-80 flex-none bg-slate-900/50 border-r border-white/5 backdrop-blur-md flex flex-col p-6 z-20 h-full">
         <div className="flex-none">
           <div className="flex flex-col gap-2 mb-4">
@@ -94,19 +102,37 @@ const DashboardPage = ({ data, countries, selectedCountries, setSelectedCountrie
           </div>
         </div>
 
+        {/* --- LISTE DER AUSGEWÄHLTEN LÄNDER --- */}
         <div className="h-40 flex-none flex flex-col border-b border-white/5 pb-4 mb-4">
+            
             <div className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2 flex justify-between items-center">
               <span>{activeTab === 'pulse' ? 'PAYS CIBLE' : 'SÉLECTION ACTUELLE'}</span>
-              <span className="bg-slate-800 px-2 py-0.5 rounded text-cyan-500">{selectedCountries.length}</span>
+              
+              {/* BUTTON LOGIC - FINAL VERSION */}
+              {selectedCountries.length > 1 ? (
+                <button 
+                  onClick={resetComparisons}
+                  className="text-[10px] font-bold bg-red-500/10 text-red-400 border border-red-500/20 px-2 py-0.5 rounded hover:bg-red-500/20 hover:text-white transition-colors animate-enter"
+                >
+                  EFFACER TOUT
+                </button>
+              ) : (
+                <span className="bg-slate-800 px-2 py-0.5 rounded text-cyan-500">{selectedCountries.length}</span>
+              )}
             </div>
+
             <div className="flex-1 overflow-y-auto custom-scrollbar pr-1 space-y-2">
                {selectedCountries.map((country, idx) => (
                   <div key={country} className="flex items-center justify-between bg-slate-800/80 border border-slate-600 rounded-lg pl-3 pr-2 py-2 group hover:border-red-500/50 transition-colors">
                      <div className="flex items-center gap-2 overflow-hidden">
                         <div className="w-2 h-2 rounded-full flex-shrink-0" style={{backgroundColor: countryColors[idx % countryColors.length]}}></div>
-                        <span className="text-xs font-medium text-slate-200 truncate" title={country}>{country}</span>
+                        <span className="text-xs font-medium text-slate-200 truncate" title={country}>
+                          {country} {idx === 0 && <span className="text-[9px] text-slate-500 ml-1">(Principal)</span>}
+                        </span>
                      </div>
-                     <button onClick={() => toggleCountry(country)} className="ml-2 w-5 h-5 flex items-center justify-center rounded hover:bg-red-500/20 text-slate-500 hover:text-red-400 transition-colors">×</button>
+                     {(selectedCountries.length > 1 || activeTab === 'compare') && (
+                       <button onClick={() => toggleCountry(country)} className="ml-2 w-5 h-5 flex items-center justify-center rounded hover:bg-red-500/20 text-slate-500 hover:text-red-400 transition-colors">×</button>
+                     )}
                   </div>
                ))}
             </div>
@@ -115,13 +141,19 @@ const DashboardPage = ({ data, countries, selectedCountries, setSelectedCountrie
         <div className="flex-1 min-h-0 flex flex-col">
           <span className="text-[10px] text-slate-500 uppercase mb-2">Ajouter un pays</span>
           <div className="flex-1 overflow-hidden">
-             <CountrySelector countries={countries} selectedCountries={selectedCountries} onToggle={toggleCountry} data={data} />
+             <CountrySelector 
+                countries={countries} 
+                selectedCountries={selectedCountries} 
+                onToggle={toggleCountry} 
+                data={data}
+                setSelectedCountries={setSelectedCountries}
+             />
           </div>
         </div>
       </div>
 
+      {/* --- CHARTS --- */}
       <div className="flex-1 flex flex-col relative bg-gradient-to-br from-[#0B0F19] to-[#111827] h-full">
-        
         {showSlider && (
           <div className="absolute top-2 left-1/2 -translate-x-1/2 w-full max-w-xl z-10 px-4 animate-enter">
              <div className="bg-slate-900/95 backdrop-blur-md border border-white/10 rounded-xl py-1 px-4 shadow-xl">
@@ -131,13 +163,11 @@ const DashboardPage = ({ data, countries, selectedCountries, setSelectedCountrie
         )}
 
         <div className="flex-1 w-full h-full p-6 overflow-hidden flex flex-col">
-          
           {activeTab === 'pulse' && (
             <div className="flex-1 flex flex-col items-center justify-center pt-12">
               <div className="text-center mb-2 animate-enter relative z-0 flex-none">
                 <h2 className="text-5xl font-bold text-white mb-1 tracking-tight">{focusCountry}</h2>
               </div>
-
               <div className="flex-1 w-full relative">
                  <EconomicPulse data={pulseData} year={currentYear} country={focusCountry} />
               </div>

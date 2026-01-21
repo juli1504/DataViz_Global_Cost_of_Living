@@ -13,7 +13,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Keeps selection alive even if switching pages
+  // This defines the variables you are trying to pass down below
   const [selectedCountries, setSelectedCountries] = useState([
     'France', 'United States', 'China', 'Germany', 'Brazil'
   ]);
