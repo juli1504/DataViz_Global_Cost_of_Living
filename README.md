@@ -15,6 +15,6 @@ EcoPulse also enables to focus on the economic situation of a particular country
 
 
 ### Comparison of GDP evolution in different countries  
-<img width="1370" height="769" alt="Comparaison_PIB" src="https://github.com/user-attachments/assets/752f7ac1-8025-45cb-b91a-81ab2312fec5" />
+<img width="500" height="300" alt="Comparaison_PIB" src="https://github.com/user-attachments/assets/752f7ac1-8025-45cb-b91a-81ab2312fec5" />
 
 
