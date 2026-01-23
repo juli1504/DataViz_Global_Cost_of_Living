@@ -30,15 +30,15 @@
 
 ### Page d'Accueil
 Une introduction immersive au projet.
-<img src="./Welcome%20Page.png" alt="Page d'Accueil EcoPulse" width="800" style="border-radius: 10px; border: 1px solid #333;">
+<img src="./Welcome%20Page.png" alt="Page d'Accueil EcoPulse" width="600" style="border-radius: 10px; border: 1px solid #333;">
 
 ### Mode Résumé (Pulse)
 Analyse d'un pays spécifique (Structure économique et PIB).
-<img src="./Focus%20on%20a%20particular%20country.png" alt="Dashboard Vue Pulse" width="800" style="border-radius: 10px; border: 1px solid #333;">
+<img src="./Focus%20on%20a%20particular%20country.png" alt="Dashboard Vue Pulse" width="600" style="border-radius: 10px; border: 1px solid #333;">
 
 ### Mode Comparaison
 Comparaison historique ou sectorielle entre plusieurs pays.
-<img src="./Comparison%20of%20GDP%20evolution.png" alt="Mode Comparaison" width="800" style="border-radius: 10px; border: 1px solid #333;">
+<img src="./Comparison%20of%20GDP%20evolution.png" alt="Mode Comparaison" width="600" style="border-radius: 10px; border: 1px solid #333;">
 
 ---
 
@@ -150,15 +150,15 @@ Projet réalisé par :
 
 ### Home Page
 Immersive landing page.
-<img src="./Welcome%20Page.png" alt="EcoPulse Home Page" width="800" style="border-radius: 10px; border: 1px solid #333;">
+<img src="./Welcome%20Page.png" alt="EcoPulse Home Page" width="600" style="border-radius: 10px; border: 1px solid #333;">
 
 ### Summary Mode (Pulse)
 Analysis of a specific country.
-<img src="./Focus%20on%20a%20particular%20country.png" alt="Dashboard Pulse View" width="800" style="border-radius: 10px; border: 1px solid #333;">
+<img src="./Focus%20on%20a%20particular%20country.png" alt="Dashboard Pulse View" width="600" style="border-radius: 10px; border: 1px solid #333;">
 
 ### Comparison Mode
 Historical or sectoral comparison between multiple countries.
-<img src="./Comparison%20of%20GDP%20evolution.png" alt="Comparison Mode" width="800" style="border-radius: 10px; border: 1px solid #333;">
+<img src="./Comparison%20of%20GDP%20evolution.png" alt="Comparison Mode" width="600" style="border-radius: 10px; border: 1px solid #333;">
 
 ---
 
