@@ -2,9 +2,9 @@ import React from 'react';
 
 const team = [
   { name: 'Julia', role: 'Data Engineer', avatar: '👩🏼‍💻', desc: 'Traitement et nettoyage des données', color: 'cyan', studyProgram: "Erasmus"},
-  { name: 'Hamidoullah', role: 'Web Developer', avatar: '👨🏿‍💻', desc: 'Développement D3.js', color: 'pink', studyProgram: "M2 Intelligence Artificielle"},
-  { name: 'Danyl', role: 'Web Developer', avatar: '👨‍💻', desc: 'Développement React et D3.js', color: 'purple', studyProgram: "M2 Intelligence Artificielle"},
-  { name: 'Oscar', role: 'Data Engineer', avatar: '🧑🏼‍💻', desc: 'Traitement et nettoyage des données', color: 'emerald', studyProgram: "M2 Intelligence Artificielle"},
+  { name: 'Hamidoullah', role: 'Web Developer', avatar: '👨🏿‍💻', desc: 'Développement D3.js', color: 'pink', studyProgram: "M2 Intelligence Artificielle", programUrl: "http://master-info.univ-lyon1.fr/AI"},
+  { name: 'Danyl', role: 'Web Developer', avatar: '👨‍💻', desc: 'Développement React et D3.js', color: 'purple', studyProgram: "M2 Intelligence Artificielle", programUrl: "http://master-info.univ-lyon1.fr/AI"},
+  { name: 'Oscar', role: 'Data Engineer', avatar: '🧑🏼‍💻', desc: 'Traitement et nettoyage des données', color: 'emerald', studyProgram: "M2 Intelligence Artificielle", programUrl: "http://master-info.univ-lyon1.fr/AI"},
 ];
 
 const TeamPage = () => {
@@ -41,9 +41,20 @@ const TeamPage = () => {
                 <p className="text-slate-500 text-sm mb-4 flex-grow">{member.desc}</p>
                 
                 <div className="pt-4 border-t border-slate-800 w-full mt-auto">
-                   <span className={`inline-block px-3 py-1 text-xs font-semibold tracking-wide text-${member.color}-100 bg-${member.color}-500/10 rounded-full border border-${member.color}-500/20`}>
-                    {member.studyProgram}
-                  </span>
+                  {member.programUrl ? (
+                    <a 
+                      href={member.programUrl}
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className={`inline-block px-3 py-1 text-xs font-semibold tracking-wide text-${member.color}-100 bg-${member.color}-500/10 rounded-full border border-${member.color}-500/20 hover:bg-${member.color}-500/20 transition-colors`}
+                    >
+                      {member.studyProgram} &rarr;
+                    </a>
+                  ) : (
+                    <span className={`inline-block px-3 py-1 text-xs font-semibold tracking-wide text-${member.color}-100 bg-${member.color}-500/10 rounded-full border border-${member.color}-500/20`}>
+                      {member.studyProgram}
+                    </span>
+                  )}
                 </div>
               </div>
             ))}
