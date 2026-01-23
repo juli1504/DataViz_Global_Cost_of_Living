@@ -1,10 +1,10 @@
 import React from 'react';
 
 const team = [
-  { name: 'Julia', role: 'Data Engineer', avatar: '👩🏼‍💻', desc: 'Traitement et nettoyage des données', color: 'cyan' },
-  { name: 'Hamidoullah', role: 'Web Developer', avatar: '👨🏿‍💻', desc: 'Développement D3.js', color: 'pink' },
-  { name: 'Danyl', role: 'Web Developer', avatar: '👨‍💻', desc: 'Développement React et D3.js', color: 'purple' },
-  { name: 'Oscar', role: 'Data Engineer', avatar: '🧑🏼‍💻', desc: 'Traitement et nettoyage des données', color: 'emerald' },
+  { name: 'Julia', role: 'Data Engineer', avatar: '👩🏼‍💻', desc: 'Traitement et nettoyage des données', color: 'cyan', studyProgram: "Erasmus"},
+  { name: 'Hamidoullah', role: 'Web Developer', avatar: '👨🏿‍💻', desc: 'Développement D3.js', color: 'pink', studyProgram: "M2 Intelligence Artificielle"},
+  { name: 'Danyl', role: 'Web Developer', avatar: '👨‍💻', desc: 'Développement React et D3.js', color: 'purple', studyProgram: "M2 Intelligence Artificielle"},
+  { name: 'Oscar', role: 'Data Engineer', avatar: '🧑🏼‍💻', desc: 'Traitement et nettoyage des données', color: 'emerald', studyProgram: "M2 Intelligence Artificielle"},
 ];
 
 const TeamPage = () => {
@@ -30,7 +30,7 @@ const TeamPage = () => {
             {team.map((member, idx) => (
               <div 
                 key={idx}
-                className="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 text-center hover:border-slate-700 transition-all hover:-translate-y-1 hover:shadow-xl"
+                className="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 text-center hover:border-slate-700 transition-all hover:-translate-y-1 hover:shadow-xl flex flex-col items-center"
               >
                 <div className={`w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-${member.color}-500/20 to-${member.color}-600/20 flex items-center justify-center text-4xl border-2 border-${member.color}-500/30`}>
                   {member.avatar}
@@ -38,7 +38,13 @@ const TeamPage = () => {
                 
                 <h3 className="text-lg font-bold text-white mb-1">{member.name}</h3>
                 <p className={`text-${member.color}-400 text-sm font-medium mb-3`}>{member.role}</p>
-                <p className="text-slate-500 text-sm">{member.desc}</p>
+                <p className="text-slate-500 text-sm mb-4 flex-grow">{member.desc}</p>
+                
+                <div className="pt-4 border-t border-slate-800 w-full mt-auto">
+                   <span className={`inline-block px-3 py-1 text-xs font-semibold tracking-wide text-${member.color}-100 bg-${member.color}-500/10 rounded-full border border-${member.color}-500/20`}>
+                    {member.studyProgram}
+                  </span>
+                </div>
               </div>
             ))}
           </div>
