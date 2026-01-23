@@ -1,0 +1,12 @@
+# EcoPulse : Visualisation des Flux Économiques Mondiaux
+
+**Lien vers le projet :** [https://economypulse.netlify.app/](https://economypulse.netlify.app/)
+
+EcoPulse est un tableau de bord interactif analysant 50 ans de données économiques mondiales (1970-2021).
+Le projet propose une visualisation radiale originale ("Economic Pulse") pour explorer la structure du PIB, les flux commerciaux et la répartition sectorielle, ainsi que des outils comparatifs pour l'analyse multi-pays.
+
+**Auteurs :**
+* Julia
+* Oscar
+* Hamidoullah
+* Danyl

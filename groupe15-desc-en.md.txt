@@ -1,0 +1,12 @@
+# EcoPulse: Global Economy Viz
+
+**Project Link:** [https://economypulse.netlify.app/](https://economypulse.netlify.app/)
+
+EcoPulse is an interactive dashboard analyzing 50 years of global economic data (1970-2021).
+It features a custom radial visualization ("Economic Pulse") to explore GDP structure, trade flows, and sectoral distribution, along with comparative tools for multi-country analysis.
+
+**Authors:**
+* Julia
+* Oscar
+* Hamidoullah
+* Danyl
