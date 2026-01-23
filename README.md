@@ -45,7 +45,7 @@ Getting Started
 Bash
 git clone https://github.com/YourUsername/EcoPulse.git
 cd EcoPulse
-# If the web app is in a subfolder, navigate into it (e.g., cd web)
+(If the web app is in a subfolder, navigate into it (e.g., cd web))
 
 2. Install dependencies:
 
@@ -59,7 +59,7 @@ npm run dev
 Open your browser: Navigate to http://localhost:5173/
 
 Team
-Julia - Project Coordination & Data Processing & Final Improvements
-Oscar - Data Exploration & Cleaning
-Hamidoullah - D3.js Visualization Development
-Danyl - UI/UX Design & React Development
+- Julia - Project Coordination & Data Processing & Final Improvements
+- Oscar - Data Exploration & Cleaning
+- Hamidoullah - D3.js Visualization Development
+- Danyl - UI/UX Design & React Development
