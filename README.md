@@ -78,7 +78,7 @@ Installez les librairies nécessaires (React, D3, Tailwind, Vite) :
 npm install
 ```
 
-### 3. Configuration des Données (⚠️ Important)
+### 3. Configuration des Données (Important)
 Le projet nécessite un fichier de données pour fonctionner.
 1.  Assurez-vous d'avoir le fichier `economy.csv`.
 2.  Placez ce fichier impérativement dans le dossier **`public/`** à la racine du projet.
@@ -198,7 +198,7 @@ Install the required libraries (React, D3, Tailwind, Vite):
 npm install
 ```
 
-### 3. Data Configuration (⚠️ Important)
+### 3. Data Configuration (Important)
 The project relies on a specific dataset to function.
 1.  Ensure you have the `economy.csv` file.
 2.  Place this file strictly inside the **`public/`** folder at the project root.
