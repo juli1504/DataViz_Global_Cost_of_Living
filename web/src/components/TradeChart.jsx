@@ -10,6 +10,7 @@ const TradeChart = ({ datasets, showCrises = true, showProjection = false }) => 
   const [tooltipPos, setTooltipPos] = useState(null);
 
   useEffect(() => {
+    // Sécurité : si pas de datasets, on ne fait rien
     if (!datasets || datasets.length === 0 || !containerRef.current) return;
 
     const container = containerRef.current;
@@ -27,7 +28,23 @@ const TradeChart = ({ datasets, showCrises = true, showProjection = false }) => 
 
     const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
 
-    let allYears = datasets.flatMap(ds => ds.data.map(d => d.year));
+    // Sécurité : Vérifier qu'il y a des données dans les datasets
+    const validDatasets = datasets.filter(ds => ds.data && ds.data.length > 0);
+    if (validDatasets.length === 0) {
+      g.append("text")
+       .attr("x", w / 2)
+       .attr("y", h / 2)
+       .attr("text-anchor", "middle")
+       .attr("fill", "#64748b")
+       .text("Pas de données disponibles");
+      return;
+    }
+
+    let allYears = validDatasets.flatMap(ds => ds.data.map(d => d.year));
+    
+    // Si allYears est vide, on arrête pour éviter le crash
+    if (allYears.length === 0) return;
+
     if (showProjection) {
         const maxYear = Math.max(...allYears);
         for(let i=1; i<=5; i++) allYears.push(maxYear + i);
@@ -37,14 +54,14 @@ const TradeChart = ({ datasets, showCrises = true, showProjection = false }) => 
       .domain(d3.extent(allYears))
       .range([0, w]);
 
-    const isSingle = datasets.length === 1;
+    const isSingle = validDatasets.length === 1;
 
     if (isSingle) {
-      const data = datasets[0].data;
+      const data = validDatasets[0].data;
 
       const yMax = d3.max(data, d => Math.max(d.exports || 0, d.imports || 0));
       const y = d3.scaleLinear()
-        .domain([0, yMax * 1.1])
+        .domain([0, (yMax || 100) * 1.1]) // Fallback si yMax est 0
         .range([h, 0]);
 
       g.selectAll('.grid-line').data(y.ticks(5)).enter().append('line')
@@ -99,8 +116,11 @@ const TradeChart = ({ datasets, showCrises = true, showProjection = false }) => 
       drawLine('imports', '#f97316');
 
       const lastPoint = data[data.length - 1];
-      g.append('text').attr('x', x(lastPoint.year) + 5).attr('y', y(lastPoint.exports)).attr('fill', '#22c55e').attr('font-size', '12px').attr('font-weight', 'bold').text('Exp.');
-      g.append('text').attr('x', x(lastPoint.year) + 5).attr('y', y(lastPoint.imports)).attr('fill', '#f97316').attr('font-size', '12px').attr('font-weight', 'bold').text('Imp.');
+      // FIX CRASH: Vérifier si lastPoint existe
+      if (lastPoint) {
+        g.append('text').attr('x', x(lastPoint.year) + 5).attr('y', y(lastPoint.exports)).attr('fill', '#22c55e').attr('font-size', '12px').attr('font-weight', 'bold').text('Exp.');
+        g.append('text').attr('x', x(lastPoint.year) + 5).attr('y', y(lastPoint.imports)).attr('fill', '#f97316').attr('font-size', '12px').attr('font-weight', 'bold').text('Imp.');
+      }
 
       g.append('rect').attr('width', w).attr('height', h).attr('fill', 'transparent').style('cursor', 'crosshair')
         .on('mousemove', (event) => {
@@ -138,12 +158,15 @@ const TradeChart = ({ datasets, showCrises = true, showProjection = false }) => 
 
     } else {
       
-      const balanceDatasets = datasets.map(ds => {
+      const balanceDatasets = validDatasets.map(ds => {
           const balanceData = ds.data.map(d => ({ year: d.year, balance: (d.exports || 0) - (d.imports || 0) }));
           return { ...ds, balanceData };
       });
 
       const allBalances = balanceDatasets.flatMap(ds => ds.balanceData.map(d => d.balance));
+      // Sécurité si pas de balances
+      if (allBalances.length === 0) return;
+
       const yMin = Math.min(0, d3.min(allBalances));
       const yMax = d3.max(allBalances);
 
@@ -194,8 +217,19 @@ const TradeChart = ({ datasets, showCrises = true, showProjection = false }) => 
                 g.append('path').datum(projData).attr('fill', 'none').attr('stroke', color).attr('stroke-width', 2).attr('stroke-dasharray', '4,4').attr('opacity', 0.6).attr('d', line);
             }
         }
+        
         const last = ds.balanceData[ds.balanceData.length - 1];
-        g.append('text').attr('x', x(last.year) + 5).attr('y', y(last.balance)).attr('fill', color).attr('font-size', '11px').attr('font-weight', 'bold').text(ds.country);
+        
+        // FIX CRASH : Vérification ICI que 'last' existe avant de l'utiliser
+        if (last) {
+            g.append('text')
+            .attr('x', x(last.year) + 5)
+            .attr('y', y(last.balance))
+            .attr('fill', color)
+            .attr('font-size', '11px')
+            .attr('font-weight', 'bold')
+            .text(ds.country);
+        }
       });
 
       g.append('rect').attr('width', w).attr('height', h).attr('fill', 'transparent').style('cursor', 'crosshair')
