@@ -25,3 +25,8 @@ https://economypulse.netlify.app/
 <img width="500" height="300" alt="Comp_PIB" src="https://github.com/user-attachments/assets/b9802b2e-f8ef-40a3-945a-8fa750097626" />
 
 
+
+
+## 📄 Exécution en local
+
+Le dossier **`web/`** contient un fichier **README dédié** qui décrit en détail les **prérequis**, les **étapes d’installation** et la **procédure complète pour exécuter l’application web en local** (installation des dépendances, lancement du serveur de développement, accès via le navigateur).
