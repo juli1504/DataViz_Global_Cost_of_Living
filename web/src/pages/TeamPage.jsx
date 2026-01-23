@@ -1,10 +1,10 @@
 import React from 'react';
 
 const team = [
-  { name: 'Julia', role: 'Data Engineer', avatar: '👩🏼‍💻', desc: 'Traitement et nettoyage des données', color: 'cyan', studyProgram: "Erasmus"},
-  { name: 'Hamidoullah', role: 'Web Developer', avatar: '👨🏿‍💻', desc: 'Développement D3.js', color: 'pink', studyProgram: "M2 Intelligence Artificielle", programUrl: "http://master-info.univ-lyon1.fr/AI"},
+  { name: 'Julia', role: 'Data Engineer', email: 'julia.markhovski@etu.univ-lyon1.fr', avatar: '👩🏼‍💻', desc: 'Traitement et nettoyage des données', color: 'cyan', studyProgram: "Erasmus"},
+  { name: 'Hamidoullah', role: 'Web Developer', email: 'hamidoullah.hamidou-garba@etu.univ-lyon1.fr', avatar: '👨🏿‍💻', desc: 'Développement D3.js', color: 'pink', studyProgram: "M2 Intelligence Artificielle", programUrl: "http://master-info.univ-lyon1.fr/AI"},
   { name: 'Danyl', role: 'Web Developer', avatar: '👨‍💻', desc: 'Développement React et D3.js', color: 'purple', studyProgram: "M2 Intelligence Artificielle", programUrl: "http://master-info.univ-lyon1.fr/AI"},
-  { name: 'Oscar', role: 'Data Engineer', avatar: '🧑🏼‍💻', desc: 'Traitement et nettoyage des données', color: 'emerald', studyProgram: "M2 Intelligence Artificielle", programUrl: "http://master-info.univ-lyon1.fr/AI"},
+  { name: 'Oscar', role: 'Data Engineer', email: 'oscar.roth@etu.univ-lyon1.fr', avatar: '🧑🏼‍💻', desc: 'Traitement et nettoyage des données', color: 'emerald', studyProgram: "M2 Intelligence Artificielle", programUrl: "http://master-info.univ-lyon1.fr/AI"},
 ];
 
 const TeamPage = () => {
@@ -37,7 +37,18 @@ const TeamPage = () => {
                 </div>
                 
                 <h3 className="text-lg font-bold text-white mb-1">{member.name}</h3>
-                <p className={`text-${member.color}-400 text-sm font-medium mb-3`}>{member.role}</p>
+                <p className={`text-${member.color}-400 text-sm font-medium mb-2`}>{member.role}</p>
+                
+                {/* E-Mail Link (nur wenn vorhanden) */}
+                {member.email && (
+                  <a 
+                    href={`mailto:${member.email}`} 
+                    className="text-slate-500 text-xs hover:text-white transition-colors mb-3 flex items-center gap-1"
+                  >
+                    📧 {member.email.split('@')[0]}... {/* Zeigt nur den Namensteil an, um Platz zu sparen */}
+                  </a>
+                )}
+
                 <p className="text-slate-500 text-sm mb-4 flex-grow">{member.desc}</p>
                 
                 <div className="pt-4 border-t border-slate-800 w-full mt-auto">
