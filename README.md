@@ -11,17 +11,17 @@ You can find our web site by following the link : https://economypulse.netlify.a
 
 <p align="center">
   <strong>Welcome Page</strong><br>
-  <img width="600" src="https://github.com/user-attachments/assets/01440a99-5e6d-4554-bbea-83d34475cb8e" alt="Page_accueil" />
+  <img width="600" src="./Welcome%20Page.png" alt="Page_accueil" />
 </p>
 
 <p align="center">
   <strong>Focus on a particular country</strong><br>
-  <img width="600" src="https://github.com/user-attachments/assets/d2731f26-e4bc-426c-9ab6-fa35da04003a" alt="Focus_pays" />
+  <img width="600" src="./Focus%20on%20a%20particular%20country.png" alt="Focus_pays" />
 </p>
 
 <p align="center">
   <strong>Comparison of GDP evolution</strong><br>
-  <img width="600" src="https://github.com/user-attachments/assets/b9802b2e-f8ef-40a3-945a-8fa750097626" alt="Comp_PIB" />
+  <img width="600" src="./Comparison%20of%20GDP%20evolution.png" alt="Comp_PIB" />
 </p>
 
 EcoPulse integrates interactive features & technical highlights
