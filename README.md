@@ -2,6 +2,7 @@
 Our project, EcoPulse, aims to analyze the evolution of the global economy from 1970 to 2021 by studying the impact of structural factors on countries' GDP. It offers a variety of tools to compare the economic evolution of different countries over time across four aspects:
 
 - GDP evolution
+- Import/export dynamics
 - Demographic situation
 - Sectoral distribution of GDP
 
