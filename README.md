@@ -1,8 +1,7 @@
-<p align=center> EcoPulse </p>
+# <p align=center> EcoPulse </p>
 Our project, EcoPulse, aims to analyze the evolution of the global economy from 1970 to 2021 by studying the impact of structural factors on countries' GDP. It offers a variety of tools to compare the economic evolution of different countries over time across four aspects:
 
 - GDP evolution
-- Import/export dynamics
 - Demographic situation
 - Sectoral distribution of GDP
 
@@ -33,7 +32,7 @@ EcoPulse integrates interactive features & technical highlights
   - Comparison Mode: Select up to 5 countries simultaneously.
   - Smart Reset: A context-aware "Erase All" button that improves ergonomics by keeping the primary country focused while clearing comparisons.
 
-Tech Stack
+# Tech Stack
 - Frontend: React.js
 - Build Tool: Vite
 - Visualization: D3.js (v7) & Recharts
@@ -45,7 +44,7 @@ This project aggregates and cleans data from three major sources to ensure robus
 - World Bank: World Development Indicators (WDI) (Supplementary historical data)
 - OECD: Better Life Index (Well-being & Satisfaction metrics)
 
-Getting Started
+# Getting Started
 1. To run this project locally, clone the repository:
 
 Bash
