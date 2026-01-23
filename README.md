@@ -7,7 +7,7 @@
 
 **[Français]** | [English](#english-version)
 
-**EcoPulse** est une application web interactive permettant de visualiser et comparer l'évolution économique des pays sur les 50 dernières années. Le projet utilise **React 19** pour l'architecture et **D3.js** pour la génération de graphiques avancés (Line Charts, Pie Charts, Cartes choroplèthes).
+**EcoPulse** est une application web interactive permettant de visualiser et comparer l'évolution économique des pays sur les 50 dernières années. Le projet utilise **React 19** pour l'architecture et **D3.js** pour la génération de graphiques avancés (Line Charts, Pie Charts).
 
 🔗 **Voir le projet en ligne :** [https://economypulse.netlify.app/](https://economypulse.netlify.app/)
 
